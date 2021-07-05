@@ -3,7 +3,7 @@
     <BMenu :items="bh"></BMenu>
     <v-container class="my-5">
       <!-- background-color="primary" dark  -->
-      <v-tabs v-model="tabValue" class="mb-10">
+      <v-tabs class="mb-10" show-arrows>
         <template v-for="(aggList, aggField) in config.aggs">
           <v-tab
             v-if="!aggList.hide"
@@ -85,7 +85,7 @@
                       })
                     "
                   >
-                    {{ item.label }}
+                    <c-render :value="item.label"></c-render>
                   </nuxt-link>
                 </template>
               </v-data-table>
@@ -109,11 +109,13 @@
 // import axios from 'axios'
 import BMenu from '~/components/BMenu.vue'
 import BarChart from '~/components/BarChart'
+import CRender from '~/components/common/view/CRender.vue'
 
 export default {
   components: {
     BarChart,
     BMenu,
+    CRender,
   },
   data() {
     return {
