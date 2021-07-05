@@ -71,7 +71,7 @@
                         }
                     ],
                     "thumbnail": {
-                        "@id": "https://app.toyobunko-lab.jp/files/medium/0ec44dff0c63d2d96d49bd8b9de27fc8d832e3f3.jpg",
+                        "@id": "https://img.toyobunko-lab.jp/iiif/kaken/18K00073/u-renja1622-1623/image001.tif/full/200,/0/default.jpg",
                         "@type": "dctypes:Image",
                         "format": "image/jpeg",
                         "height": null,
@@ -111,7 +111,7 @@
                         }
                     ],
                     "thumbnail": {
-                        "@id": "https://app.toyobunko-lab.jp/files/medium/ba8dd0c804ae801b81e5e7c9b725b1ee8f8fcd4a.jpg",
+                        "@id": "https://img.toyobunko-lab.jp/iiif/kaken/18K00073/u-renja1622-1623/image002.tif/full/200,/0/default.jpg",
                         "@type": "dctypes:Image",
                         "format": "image/jpeg",
                         "height": null,
@@ -151,7 +151,7 @@
                         }
                     ],
                     "thumbnail": {
-                        "@id": "https://app.toyobunko-lab.jp/files/medium/57a909b4ae29f5ce5c5ea4a2dd9a95dad4bb06cb.jpg",
+                        "@id": "https://img.toyobunko-lab.jp/iiif/kaken/18K00073/u-renja1622-1623/image003.tif/full/200,/0/default.jpg",
                         "@type": "dctypes:Image",
                         "format": "image/jpeg",
                         "height": null,
@@ -191,7 +191,7 @@
                         }
                     ],
                     "thumbnail": {
-                        "@id": "https://app.toyobunko-lab.jp/files/medium/69bdcc31ce4f3ff89516a62c759e4d056a93043b.jpg",
+                        "@id": "https://img.toyobunko-lab.jp/iiif/kaken/18K00073/u-renja1622-1623/image004.tif/full/200,/0/default.jpg",
                         "@type": "dctypes:Image",
                         "format": "image/jpeg",
                         "height": null,
@@ -231,7 +231,7 @@
                         }
                     ],
                     "thumbnail": {
-                        "@id": "https://app.toyobunko-lab.jp/files/medium/89f429ae299bb0207286ede3678f8e43d135e3f1.jpg",
+                        "@id": "https://img.toyobunko-lab.jp/iiif/kaken/18K00073/u-renja1622-1623/image005.tif/full/200,/0/default.jpg",
                         "@type": "dctypes:Image",
                         "format": "image/jpeg",
                         "height": null,
@@ -271,7 +271,7 @@
                         }
                     ],
                     "thumbnail": {
-                        "@id": "https://app.toyobunko-lab.jp/files/medium/c5278a352f08d852bfa714141f9a1b40bc977ab1.jpg",
+                        "@id": "https://img.toyobunko-lab.jp/iiif/kaken/18K00073/u-renja1622-1623/image006.tif/full/200,/0/default.jpg",
                         "@type": "dctypes:Image",
                         "format": "image/jpeg",
                         "height": null,
@@ -311,7 +311,7 @@
                         }
                     ],
                     "thumbnail": {
-                        "@id": "https://app.toyobunko-lab.jp/files/medium/240b77673ddbf93d24e2f663567768917587b42d.jpg",
+                        "@id": "https://img.toyobunko-lab.jp/iiif/kaken/18K00073/u-renja1622-1623/image007.tif/full/200,/0/default.jpg",
                         "@type": "dctypes:Image",
                         "format": "image/jpeg",
                         "height": null,
@@ -351,7 +351,7 @@
                         }
                     ],
                     "thumbnail": {
-                        "@id": "https://app.toyobunko-lab.jp/files/medium/a684edb7c76a2bf88e698afd1ffec893bf023cbb.jpg",
+                        "@id": "https://img.toyobunko-lab.jp/iiif/kaken/18K00073/u-renja1622-1623/image008.tif/full/200,/0/default.jpg",
                         "@type": "dctypes:Image",
                         "format": "image/jpeg",
                         "height": null,
@@ -365,7 +365,7 @@
         }
     ],
     "thumbnail": {
-        "@id": "https://app.toyobunko-lab.jp/files/medium/0ec44dff0c63d2d96d49bd8b9de27fc8d832e3f3.jpg",
+        "@id": "https://img.toyobunko-lab.jp/iiif/kaken/18K00073/u-renja1622-1623/image001.tif/full/200,/0/default.jpg",
         "@type": "dctypes:Image",
         "format": "image/jpeg",
         "height": null,
