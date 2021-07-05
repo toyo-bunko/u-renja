@@ -183,7 +183,7 @@ export default class FullTextSearch extends Vue {
         continue
       }
       results.push(
-        '<a href="https://taishozo.github.io/db/search?main[query]=' +
+        '<a href="https://static.toyobunko-lab.jp/taishozo/search?main[query]=' +
           this.$utils.formatArrayValue(value) +
           '" target="_blank">' +
           this.$utils.formatArrayValue(value) +
