@@ -260,7 +260,12 @@ export default {
 
   head() {
     return {
-      title: this.$t('category'),
+      title:
+        this.$t('category') +
+        ': ' +
+        this.$t(this.config.label) +
+        ' - ' +
+        this.$route.params.id,
     }
   },
 }

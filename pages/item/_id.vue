@@ -104,5 +104,11 @@ export default class Search extends Vue {
   get pocketUrl() {
     return 'http://getpocket.com/edit?url=' + this.url
   }
+
+  head() {
+    return {
+      title: this.$t('詳細情報') + ': ' + this.title,
+    }
+  }
 }
 </script>
