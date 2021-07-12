@@ -136,7 +136,7 @@ export default class FullTextSearch extends Vue {
   tana(obj: any) {
     return (
       this.$utils.formatArrayValue(obj['函册']) +
-      (obj['函册(to)']
+      (obj['函册(to)'] && obj['函册(to)'][0] !== ''
         ? '~' + this.$utils.formatArrayValue(obj['函册(to)'])
         : '') +
       (obj['函册(闕)'] ? this.$utils.formatArrayValue(obj['函册(闕)']) : '')

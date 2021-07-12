@@ -630,12 +630,19 @@ export default {
       const sort = query.sort || this.config.defaultSort
       this.sort = sort
 
+      console.log(
+        query.layout,
+        sessionStorage.getItem('layout_' + this.baseUrl),
+        '' + this.layout_,
+        '' + this.config.defaultLayout
+      )
+
       // レイアウト
       let layout = ''
       if (query.layout) {
         layout = query.layout
-      } else if (localStorage.getItem('layout')) {
-        layout = localStorage.getItem('layout')
+      } else if (sessionStorage.getItem('layout')) {
+        layout = sessionStorage.getItem('layout')
       } else {
         layout = this.config.defaultLayout
       }
@@ -814,7 +821,7 @@ export default {
       to.query = query
       this.$router.push(this.localePath(to))
 
-      localStorage.setItem('layout', value)
+      sessionStorage.setItem('layout', value)
     },
 
     getMinusValues(field) {
