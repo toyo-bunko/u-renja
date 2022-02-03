@@ -52,6 +52,13 @@ for i in range(len(manifests)):
     m["metadata"] = df2["metadata"]
     m["@id"] = prefix + "/iiif2/" + hash + "/manifest.json"
 
+    df2["sequences"][0]["viewingDirection"] = "right-to-left"
+
+    f2 = open(path, 'w')
+    json.dump(df2, f2, ensure_ascii=False, indent=4,
+        sort_keys=True, separators=(',', ': '))
+    f2.close()
+
     manifests2.append(m)
 
 df["manifests"] = manifests2
