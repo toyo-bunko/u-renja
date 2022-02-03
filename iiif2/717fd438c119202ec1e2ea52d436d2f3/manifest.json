@@ -1041,7 +1041,7 @@
                 }
             ],
             "label": "Current Page Order",
-            "viewingDirection": "left-to-right"
+            "viewingDirection": "right-to-left"
         }
     ],
     "thumbnail": {
