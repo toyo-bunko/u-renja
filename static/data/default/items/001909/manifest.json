@@ -1,0 +1,116 @@
+{
+    "@context": "http://iiif.io/api/presentation/2/context.json",
+    "@id": "https://static.toyobunko-lab.jp/u-renja/data/default/items/001909/manifest.json",
+    "@type": "sc:Manifest",
+    "label": "1909",
+    "metadata": [
+        {
+            "label": "ID",
+            "value": 1909
+        },
+        {
+            "label": "備考",
+            "value": null
+        },
+        {
+            "label": "函册",
+            "value": "293-07"
+        },
+        {
+            "label": "函册(to)",
+            "value": "293-08"
+        },
+        {
+            "label": "函册(闕)",
+            "value": null
+        },
+        {
+            "label": "分類(1)",
+            "value": "續藏"
+        },
+        {
+            "label": "分類(2)",
+            "value": null
+        },
+        {
+            "label": "分類(3)",
+            "value": null
+        },
+        {
+            "label": "刊記",
+            "value": "康煕7年刊"
+        },
+        {
+            "label": "寸法(横)",
+            "value": 14.3
+        },
+        {
+            "label": "寸法(縦）",
+            "value": 21.6
+        },
+        {
+            "label": "寸法（備考）",
+            "value": null
+        },
+        {
+            "label": "寸法（計測箇所）",
+            "value": "卷一1a"
+        },
+        {
+            "label": "版式",
+            "value": "定型"
+        },
+        {
+            "label": "画像URL",
+            "value": null
+        },
+        {
+            "label": "經典名稱・卷數",
+            "value": "禪林寶訓合註4卷坿音切坿禪林寶訓拈頌1卷"
+        },
+        {
+            "label": "經番",
+            "value": "U續234"
+        },
+        {
+            "label": "詳目枝番(from)",
+            "value": 1
+        },
+        {
+            "label": "詳目枝番(to)",
+            "value": 9
+        },
+        {
+            "label": "譯著者",
+            "value": "宋釋宗杲・釋士珪編, 淸張文嘉等校定, 淸釋行盛撰拈頌"
+        },
+        {
+            "label": "譯著者1",
+            "value": "釋宗杲"
+        },
+        {
+            "label": "譯著者2",
+            "value": "釋士珪"
+        },
+        {
+            "label": "譯著者3",
+            "value": "張文嘉"
+        },
+        {
+            "label": "譯著者4",
+            "value": "釋行盛"
+        },
+        {
+            "label": "譯著者5",
+            "value": null
+        },
+        {
+            "label": "譯著者6",
+            "value": null
+        },
+        {
+            "label": "通番",
+            "value": 1909
+        }
+    ]
+}

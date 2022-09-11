@@ -1,0 +1,116 @@
+{
+    "@context": "http://iiif.io/api/presentation/2/context.json",
+    "@id": "https://static.toyobunko-lab.jp/u-renja/data/default/items/001531/manifest.json",
+    "@type": "sc:Manifest",
+    "label": "1531",
+    "metadata": [
+        {
+            "label": "ID",
+            "value": 1531
+        },
+        {
+            "label": "備考",
+            "value": null
+        },
+        {
+            "label": "函册",
+            "value": "162-01"
+        },
+        {
+            "label": "函册(to)",
+            "value": "162-08"
+        },
+        {
+            "label": "函册(闕)",
+            "value": null
+        },
+        {
+            "label": "分類(1)",
+            "value": "此土著述"
+        },
+        {
+            "label": "分類(2)",
+            "value": null
+        },
+        {
+            "label": "分類(3)",
+            "value": null
+        },
+        {
+            "label": "刊記",
+            "value": "萬暦33・34年刊"
+        },
+        {
+            "label": "寸法(横)",
+            "value": 14.4
+        },
+        {
+            "label": "寸法(縦）",
+            "value": 22.8
+        },
+        {
+            "label": "寸法（備考）",
+            "value": null
+        },
+        {
+            "label": "寸法（計測箇所）",
+            "value": "卷一1a"
+        },
+        {
+            "label": "版式",
+            "value": "定型"
+        },
+        {
+            "label": "画像URL",
+            "value": null
+        },
+        {
+            "label": "經典名稱・卷數",
+            "value": "景德傳燈録30卷坿校譌音釋"
+        },
+        {
+            "label": "經番",
+            "value": "U1517"
+        },
+        {
+            "label": "詳目枝番(from)",
+            "value": 1
+        },
+        {
+            "label": "詳目枝番(to)",
+            "value": 30
+        },
+        {
+            "label": "譯著者",
+            "value": "宋釋道原纂"
+        },
+        {
+            "label": "譯著者1",
+            "value": "釋道原"
+        },
+        {
+            "label": "譯著者2",
+            "value": null
+        },
+        {
+            "label": "譯著者3",
+            "value": null
+        },
+        {
+            "label": "譯著者4",
+            "value": null
+        },
+        {
+            "label": "譯著者5",
+            "value": null
+        },
+        {
+            "label": "譯著者6",
+            "value": null
+        },
+        {
+            "label": "通番",
+            "value": 1531
+        }
+    ]
+}

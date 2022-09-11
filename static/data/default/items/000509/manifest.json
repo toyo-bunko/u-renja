@@ -1,0 +1,116 @@
+{
+    "@context": "http://iiif.io/api/presentation/2/context.json",
+    "@id": "https://static.toyobunko-lab.jp/u-renja/data/default/items/000509/manifest.json",
+    "@type": "sc:Manifest",
+    "label": "509",
+    "metadata": [
+        {
+            "label": "ID",
+            "value": 509
+        },
+        {
+            "label": "備考",
+            "value": null
+        },
+        {
+            "label": "函册",
+            "value": "057-01"
+        },
+        {
+            "label": "函册(to)",
+            "value": null
+        },
+        {
+            "label": "函册(闕)",
+            "value": null
+        },
+        {
+            "label": "分類(1)",
+            "value": "經"
+        },
+        {
+            "label": "分類(2)",
+            "value": "大乘經"
+        },
+        {
+            "label": "分類(3)",
+            "value": "單譯"
+        },
+        {
+            "label": "刊記",
+            "value": "萬暦32年刊"
+        },
+        {
+            "label": "寸法(横)",
+            "value": 14.3
+        },
+        {
+            "label": "寸法(縦）",
+            "value": 23
+        },
+        {
+            "label": "寸法（備考）",
+            "value": null
+        },
+        {
+            "label": "寸法（計測箇所）",
+            "value": "1a"
+        },
+        {
+            "label": "版式",
+            "value": "定型"
+        },
+        {
+            "label": "画像URL",
+            "value": null
+        },
+        {
+            "label": "經典名稱・卷數",
+            "value": "文殊師利般涅槃經1卷"
+        },
+        {
+            "label": "經番",
+            "value": "U0504"
+        },
+        {
+            "label": "詳目枝番(from)",
+            "value": 1
+        },
+        {
+            "label": "詳目枝番(to)",
+            "value": 1
+        },
+        {
+            "label": "譯著者",
+            "value": "西晉聶道眞譯"
+        },
+        {
+            "label": "譯著者1",
+            "value": "聶道眞"
+        },
+        {
+            "label": "譯著者2",
+            "value": null
+        },
+        {
+            "label": "譯著者3",
+            "value": null
+        },
+        {
+            "label": "譯著者4",
+            "value": null
+        },
+        {
+            "label": "譯著者5",
+            "value": null
+        },
+        {
+            "label": "譯著者6",
+            "value": null
+        },
+        {
+            "label": "通番",
+            "value": 509
+        }
+    ]
+}

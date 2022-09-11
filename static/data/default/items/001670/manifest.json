@@ -1,0 +1,116 @@
+{
+    "@context": "http://iiif.io/api/presentation/2/context.json",
+    "@id": "https://static.toyobunko-lab.jp/u-renja/data/default/items/001670/manifest.json",
+    "@type": "sc:Manifest",
+    "label": "1670",
+    "metadata": [
+        {
+            "label": "ID",
+            "value": 1670
+        },
+        {
+            "label": "備考",
+            "value": null
+        },
+        {
+            "label": "函册",
+            "value": "205-07"
+        },
+        {
+            "label": "函册(to)",
+            "value": null
+        },
+        {
+            "label": "函册(闕)",
+            "value": null
+        },
+        {
+            "label": "分類(1)",
+            "value": "大明續入藏諸集"
+        },
+        {
+            "label": "分類(2)",
+            "value": null
+        },
+        {
+            "label": "分類(3)",
+            "value": null
+        },
+        {
+            "label": "刊記",
+            "value": "康煕3年刊"
+        },
+        {
+            "label": "寸法(横)",
+            "value": 14.1
+        },
+        {
+            "label": "寸法(縦）",
+            "value": 21.7
+        },
+        {
+            "label": "寸法（備考）",
+            "value": null
+        },
+        {
+            "label": "寸法（計測箇所）",
+            "value": "卷上3a"
+        },
+        {
+            "label": "版式",
+            "value": "定型"
+        },
+        {
+            "label": "画像URL",
+            "value": null
+        },
+        {
+            "label": "經典名稱・卷數",
+            "value": "華嚴七字經題法界觀三十門頌2卷"
+        },
+        {
+            "label": "經番",
+            "value": "U1650"
+        },
+        {
+            "label": "詳目枝番(from)",
+            "value": 1
+        },
+        {
+            "label": "詳目枝番(to)",
+            "value": 3
+        },
+        {
+            "label": "譯著者",
+            "value": "宋釋本嵩述頌, 元釋琮湛集解"
+        },
+        {
+            "label": "譯著者1",
+            "value": "釋本嵩"
+        },
+        {
+            "label": "譯著者2",
+            "value": "釋琮湛"
+        },
+        {
+            "label": "譯著者3",
+            "value": null
+        },
+        {
+            "label": "譯著者4",
+            "value": null
+        },
+        {
+            "label": "譯著者5",
+            "value": null
+        },
+        {
+            "label": "譯著者6",
+            "value": null
+        },
+        {
+            "label": "通番",
+            "value": 1670
+        }
+    ]
+}

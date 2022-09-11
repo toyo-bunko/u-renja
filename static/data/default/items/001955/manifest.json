@@ -1,0 +1,116 @@
+{
+    "@context": "http://iiif.io/api/presentation/2/context.json",
+    "@id": "https://static.toyobunko-lab.jp/u-renja/data/default/items/001955/manifest.json",
+    "@type": "sc:Manifest",
+    "label": "1955",
+    "metadata": [
+        {
+            "label": "ID",
+            "value": 1955
+        },
+        {
+            "label": "備考",
+            "value": null
+        },
+        {
+            "label": "函册",
+            "value": "307-04"
+        },
+        {
+            "label": "函册(to)",
+            "value": "307-07"
+        },
+        {
+            "label": "函册(闕)",
+            "value": null
+        },
+        {
+            "label": "分類(1)",
+            "value": "又續藏"
+        },
+        {
+            "label": "分類(2)",
+            "value": null
+        },
+        {
+            "label": "分類(3)",
+            "value": null
+        },
+        {
+            "label": "刊記",
+            "value": "康煕9年刊, 不明年刊"
+        },
+        {
+            "label": "寸法(横)",
+            "value": 13.8
+        },
+        {
+            "label": "寸法(縦）",
+            "value": 22.2
+        },
+        {
+            "label": "寸法（備考）",
+            "value": null
+        },
+        {
+            "label": "寸法（計測箇所）",
+            "value": "卷一1a"
+        },
+        {
+            "label": "版式",
+            "value": "定型"
+        },
+        {
+            "label": "画像URL",
+            "value": null
+        },
+        {
+            "label": "經典名稱・卷數",
+            "value": "明覺聰禪師語録16卷坿塔銘1卷"
+        },
+        {
+            "label": "經番",
+            "value": "U又續013"
+        },
+        {
+            "label": "詳目枝番(from)",
+            "value": 1
+        },
+        {
+            "label": "詳目枝番(to)",
+            "value": 26
+        },
+        {
+            "label": "譯著者",
+            "value": "淸釋性聰説, 淸釋寂空・釋方醒等編"
+        },
+        {
+            "label": "譯著者1",
+            "value": "釋性聰"
+        },
+        {
+            "label": "譯著者2",
+            "value": "釋寂空"
+        },
+        {
+            "label": "譯著者3",
+            "value": "釋方醒"
+        },
+        {
+            "label": "譯著者4",
+            "value": null
+        },
+        {
+            "label": "譯著者5",
+            "value": null
+        },
+        {
+            "label": "譯著者6",
+            "value": null
+        },
+        {
+            "label": "通番",
+            "value": 1955
+        }
+    ]
+}

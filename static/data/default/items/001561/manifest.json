@@ -1,0 +1,116 @@
+{
+    "@context": "http://iiif.io/api/presentation/2/context.json",
+    "@id": "https://static.toyobunko-lab.jp/u-renja/data/default/items/001561/manifest.json",
+    "@type": "sc:Manifest",
+    "label": "1561",
+    "metadata": [
+        {
+            "label": "ID",
+            "value": 1561
+        },
+        {
+            "label": "備考",
+            "value": "單體の金光明經文句6卷(大正藏no.1785底本)なし"
+        },
+        {
+            "label": "函册",
+            "value": "175-04"
+        },
+        {
+            "label": "函册(to)",
+            "value": "175-11"
+        },
+        {
+            "label": "函册(闕)",
+            "value": null
+        },
+        {
+            "label": "分類(1)",
+            "value": "此土著述"
+        },
+        {
+            "label": "分類(2)",
+            "value": null
+        },
+        {
+            "label": "分類(3)",
+            "value": null
+        },
+        {
+            "label": "刊記",
+            "value": null
+        },
+        {
+            "label": "寸法(横)",
+            "value": 12
+        },
+        {
+            "label": "寸法(縦）",
+            "value": 20.2
+        },
+        {
+            "label": "寸法（備考）",
+            "value": null
+        },
+        {
+            "label": "寸法（計測箇所）",
+            "value": "卷一1a"
+        },
+        {
+            "label": "版式",
+            "value": "單邊 有界7行17字 單魚尾白口 句四聲點"
+        },
+        {
+            "label": "画像URL",
+            "value": null
+        },
+        {
+            "label": "經典名稱・卷數",
+            "value": "金光明經文句文句記8卷坿音釋"
+        },
+        {
+            "label": "經番",
+            "value": "U1546"
+        },
+        {
+            "label": "詳目枝番(from)",
+            "value": 1
+        },
+        {
+            "label": "詳目枝番(to)",
+            "value": 8
+        },
+        {
+            "label": "譯著者",
+            "value": "宋釋知禮述, 明釋明得會句并記入於經文"
+        },
+        {
+            "label": "譯著者1",
+            "value": "釋知禮"
+        },
+        {
+            "label": "譯著者2",
+            "value": "釋明得"
+        },
+        {
+            "label": "譯著者3",
+            "value": null
+        },
+        {
+            "label": "譯著者4",
+            "value": null
+        },
+        {
+            "label": "譯著者5",
+            "value": null
+        },
+        {
+            "label": "譯著者6",
+            "value": null
+        },
+        {
+            "label": "通番",
+            "value": 1561
+        }
+    ]
+}

@@ -1,0 +1,116 @@
+{
+    "@context": "http://iiif.io/api/presentation/2/context.json",
+    "@id": "https://static.toyobunko-lab.jp/u-renja/data/default/items/000502/manifest.json",
+    "@type": "sc:Manifest",
+    "label": "502",
+    "metadata": [
+        {
+            "label": "ID",
+            "value": 502
+        },
+        {
+            "label": "備考",
+            "value": null
+        },
+        {
+            "label": "函册",
+            "value": "056-06"
+        },
+        {
+            "label": "函册(to)",
+            "value": null
+        },
+        {
+            "label": "函册(闕)",
+            "value": null
+        },
+        {
+            "label": "分類(1)",
+            "value": "經"
+        },
+        {
+            "label": "分類(2)",
+            "value": "大乘經"
+        },
+        {
+            "label": "分類(3)",
+            "value": "單譯"
+        },
+        {
+            "label": "刊記",
+            "value": "萬暦40年刊"
+        },
+        {
+            "label": "寸法(横)",
+            "value": 15.1
+        },
+        {
+            "label": "寸法(縦）",
+            "value": 23.5
+        },
+        {
+            "label": "寸法（備考）",
+            "value": null
+        },
+        {
+            "label": "寸法（計測箇所）",
+            "value": "24a"
+        },
+        {
+            "label": "版式",
+            "value": "定型"
+        },
+        {
+            "label": "画像URL",
+            "value": null
+        },
+        {
+            "label": "經典名稱・卷數",
+            "value": "佛説虚空藏菩薩能滿諸願最勝心陀羅尼求聞持法1卷坿音釋"
+        },
+        {
+            "label": "經番",
+            "value": "U0497"
+        },
+        {
+            "label": "詳目枝番(from)",
+            "value": 1
+        },
+        {
+            "label": "詳目枝番(to)",
+            "value": 1
+        },
+        {
+            "label": "譯著者",
+            "value": "唐輸波迦羅譯"
+        },
+        {
+            "label": "譯著者1",
+            "value": "輸波迦羅"
+        },
+        {
+            "label": "譯著者2",
+            "value": null
+        },
+        {
+            "label": "譯著者3",
+            "value": null
+        },
+        {
+            "label": "譯著者4",
+            "value": null
+        },
+        {
+            "label": "譯著者5",
+            "value": null
+        },
+        {
+            "label": "譯著者6",
+            "value": null
+        },
+        {
+            "label": "通番",
+            "value": 502
+        }
+    ]
+}

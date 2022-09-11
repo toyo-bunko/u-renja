@@ -1,0 +1,116 @@
+{
+    "@context": "http://iiif.io/api/presentation/2/context.json",
+    "@id": "https://static.toyobunko-lab.jp/u-renja/data/default/items/001813/manifest.json",
+    "@type": "sc:Manifest",
+    "label": "1813",
+    "metadata": [
+        {
+            "label": "ID",
+            "value": 1813
+        },
+        {
+            "label": "備考",
+            "value": null
+        },
+        {
+            "label": "函册",
+            "value": "265-08"
+        },
+        {
+            "label": "函册(to)",
+            "value": null
+        },
+        {
+            "label": "函册(闕)",
+            "value": null
+        },
+        {
+            "label": "分類(1)",
+            "value": "續藏"
+        },
+        {
+            "label": "分類(2)",
+            "value": null
+        },
+        {
+            "label": "分類(3)",
+            "value": null
+        },
+        {
+            "label": "刊記",
+            "value": null
+        },
+        {
+            "label": "寸法(横)",
+            "value": 14.1
+        },
+        {
+            "label": "寸法(縦）",
+            "value": 20
+        },
+        {
+            "label": "寸法（備考）",
+            "value": null
+        },
+        {
+            "label": "寸法（計測箇所）",
+            "value": "天學初徴1a"
+        },
+        {
+            "label": "版式",
+            "value": "單邊 無界8行20字 無魚尾白口 句點 傍圈點 傍注"
+        },
+        {
+            "label": "画像URL",
+            "value": null
+        },
+        {
+            "label": "經典名稱・卷數",
+            "value": "天學初徴1卷天學再徴1卷附1卷 即闢邪集"
+        },
+        {
+            "label": "經番",
+            "value": "U續138"
+        },
+        {
+            "label": "詳目枝番(from)",
+            "value": 1
+        },
+        {
+            "label": "詳目枝番(to)",
+            "value": 5
+        },
+        {
+            "label": "譯著者",
+            "value": "明鍾始聲著, 明程智用評"
+        },
+        {
+            "label": "譯著者1",
+            "value": "鍾始聲"
+        },
+        {
+            "label": "譯著者2",
+            "value": "程智用"
+        },
+        {
+            "label": "譯著者3",
+            "value": null
+        },
+        {
+            "label": "譯著者4",
+            "value": null
+        },
+        {
+            "label": "譯著者5",
+            "value": null
+        },
+        {
+            "label": "譯著者6",
+            "value": null
+        },
+        {
+            "label": "通番",
+            "value": 1813
+        }
+    ]
+}

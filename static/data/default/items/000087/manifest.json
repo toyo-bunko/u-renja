@@ -1,0 +1,116 @@
+{
+    "@context": "http://iiif.io/api/presentation/2/context.json",
+    "@id": "https://static.toyobunko-lab.jp/u-renja/data/default/items/000087/manifest.json",
+    "@type": "sc:Manifest",
+    "label": "87",
+    "metadata": [
+        {
+            "label": "ID",
+            "value": 87
+        },
+        {
+            "label": "備考",
+            "value": null
+        },
+        {
+            "label": "函册",
+            "value": "028-01"
+        },
+        {
+            "label": "函册(to)",
+            "value": "029-06"
+        },
+        {
+            "label": "函册(闕)",
+            "value": null
+        },
+        {
+            "label": "分類(1)",
+            "value": "經"
+        },
+        {
+            "label": "分類(2)",
+            "value": "大乘經"
+        },
+        {
+            "label": "分類(3)",
+            "value": "華嚴部"
+        },
+        {
+            "label": "刊記",
+            "value": "萬暦36-38年刊"
+        },
+        {
+            "label": "寸法(横)",
+            "value": 14.9
+        },
+        {
+            "label": "寸法(縦）",
+            "value": 23.2
+        },
+        {
+            "label": "寸法（備考）",
+            "value": null
+        },
+        {
+            "label": "寸法（計測箇所）",
+            "value": "卷一4a"
+        },
+        {
+            "label": "版式",
+            "value": "定型"
+        },
+        {
+            "label": "画像URL",
+            "value": "https://dzkimgs.l.u-tokyo.ac.jp/yurenja_kkz/028/028_01/3"
+        },
+        {
+            "label": "經典名稱・卷數",
+            "value": "大方廣佛華嚴經60卷坿校譌音釋"
+        },
+        {
+            "label": "經番",
+            "value": "U0083"
+        },
+        {
+            "label": "詳目枝番(from)",
+            "value": 1
+        },
+        {
+            "label": "詳目枝番(to)",
+            "value": 61
+        },
+        {
+            "label": "譯著者",
+            "value": "東晉佛陀跋陀羅等譯"
+        },
+        {
+            "label": "譯著者1",
+            "value": "佛陀跋陀羅"
+        },
+        {
+            "label": "譯著者2",
+            "value": null
+        },
+        {
+            "label": "譯著者3",
+            "value": null
+        },
+        {
+            "label": "譯著者4",
+            "value": null
+        },
+        {
+            "label": "譯著者5",
+            "value": null
+        },
+        {
+            "label": "譯著者6",
+            "value": null
+        },
+        {
+            "label": "通番",
+            "value": 87
+        }
+    ]
+}

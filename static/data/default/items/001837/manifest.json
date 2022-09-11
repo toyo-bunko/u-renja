@@ -1,0 +1,116 @@
+{
+    "@context": "http://iiif.io/api/presentation/2/context.json",
+    "@id": "https://static.toyobunko-lab.jp/u-renja/data/default/items/001837/manifest.json",
+    "@type": "sc:Manifest",
+    "label": "1837",
+    "metadata": [
+        {
+            "label": "ID",
+            "value": 1837
+        },
+        {
+            "label": "備考",
+            "value": null
+        },
+        {
+            "label": "函册",
+            "value": "273-05"
+        },
+        {
+            "label": "函册(to)",
+            "value": null
+        },
+        {
+            "label": "函册(闕)",
+            "value": null
+        },
+        {
+            "label": "分類(1)",
+            "value": "續藏"
+        },
+        {
+            "label": "分類(2)",
+            "value": null
+        },
+        {
+            "label": "分類(3)",
+            "value": null
+        },
+        {
+            "label": "刊記",
+            "value": "崇禎12年刊"
+        },
+        {
+            "label": "寸法(横)",
+            "value": 14
+        },
+        {
+            "label": "寸法(縦）",
+            "value": 21.7
+        },
+        {
+            "label": "寸法（備考）",
+            "value": null
+        },
+        {
+            "label": "寸法（計測箇所）",
+            "value": "卷上1a"
+        },
+        {
+            "label": "版式",
+            "value": "定型"
+        },
+        {
+            "label": "画像URL",
+            "value": null
+        },
+        {
+            "label": "經典名稱・卷數",
+            "value": "密菴和尚語録2卷"
+        },
+        {
+            "label": "經番",
+            "value": "U續162"
+        },
+        {
+            "label": "詳目枝番(from)",
+            "value": 1
+        },
+        {
+            "label": "詳目枝番(to)",
+            "value": 4
+        },
+        {
+            "label": "譯著者",
+            "value": "宋釋咸傑説, 明釋圓悟編"
+        },
+        {
+            "label": "譯著者1",
+            "value": "釋咸傑"
+        },
+        {
+            "label": "譯著者2",
+            "value": "釋圓悟"
+        },
+        {
+            "label": "譯著者3",
+            "value": null
+        },
+        {
+            "label": "譯著者4",
+            "value": null
+        },
+        {
+            "label": "譯著者5",
+            "value": null
+        },
+        {
+            "label": "譯著者6",
+            "value": null
+        },
+        {
+            "label": "通番",
+            "value": 1837
+        }
+    ]
+}

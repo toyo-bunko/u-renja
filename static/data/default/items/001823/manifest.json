@@ -1,0 +1,116 @@
+{
+    "@context": "http://iiif.io/api/presentation/2/context.json",
+    "@id": "https://static.toyobunko-lab.jp/u-renja/data/default/items/001823/manifest.json",
+    "@type": "sc:Manifest",
+    "label": "1823",
+    "metadata": [
+        {
+            "label": "ID",
+            "value": 1823
+        },
+        {
+            "label": "備考",
+            "value": null
+        },
+        {
+            "label": "函册",
+            "value": "267-05"
+        },
+        {
+            "label": "函册(to)",
+            "value": null
+        },
+        {
+            "label": "函册(闕)",
+            "value": null
+        },
+        {
+            "label": "分類(1)",
+            "value": "續藏"
+        },
+        {
+            "label": "分類(2)",
+            "value": null
+        },
+        {
+            "label": "分類(3)",
+            "value": null
+        },
+        {
+            "label": "刊記",
+            "value": null
+        },
+        {
+            "label": "寸法(横)",
+            "value": 11.7
+        },
+        {
+            "label": "寸法(縦）",
+            "value": 19.8
+        },
+        {
+            "label": "寸法（備考）",
+            "value": null
+        },
+        {
+            "label": "寸法（計測箇所）",
+            "value": "牧牛圖5a"
+        },
+        {
+            "label": "版式",
+            "value": "（牧牛圖）左右雙邊 上圖下文 文無界8行6字 單魚尾白口 無點, （普明縁起・無依道人和牧牛圖頌・牧公道人項眞本和牧牛圖頌）左右雙邊 有界8行17字 無魚尾白口 無點, （跛道人如念牧牛圖頌）左右雙邊 有界10行20字 無魚尾小黒口 無點"
+        },
+        {
+            "label": "画像URL",
+            "value": null
+        },
+        {
+            "label": "經典名稱・卷數",
+            "value": "普明禪師牧牛圖頌1卷坿牧牛圖1卷坿跛道人如念牧牛圖頌1卷坿無依道人和牧牛圖頌1卷坿牧公道人項眞本和牧牛圖頌1卷"
+        },
+        {
+            "label": "經番",
+            "value": "U續148"
+        },
+        {
+            "label": "詳目枝番(from)",
+            "value": 1
+        },
+        {
+            "label": "詳目枝番(to)",
+            "value": 8
+        },
+        {
+            "label": "譯著者",
+            "value": "明釋普明撰, 明釋廣印等和"
+        },
+        {
+            "label": "譯著者1",
+            "value": "釋普明"
+        },
+        {
+            "label": "譯著者2",
+            "value": "釋廣印"
+        },
+        {
+            "label": "譯著者3",
+            "value": null
+        },
+        {
+            "label": "譯著者4",
+            "value": null
+        },
+        {
+            "label": "譯著者5",
+            "value": null
+        },
+        {
+            "label": "譯著者6",
+            "value": null
+        },
+        {
+            "label": "通番",
+            "value": 1823
+        }
+    ]
+}

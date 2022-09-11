@@ -1,0 +1,116 @@
+{
+    "@context": "http://iiif.io/api/presentation/2/context.json",
+    "@id": "https://static.toyobunko-lab.jp/u-renja/data/default/items/001956/manifest.json",
+    "@type": "sc:Manifest",
+    "label": "1956",
+    "metadata": [
+        {
+            "label": "ID",
+            "value": 1956
+        },
+        {
+            "label": "備考",
+            "value": null
+        },
+        {
+            "label": "函册",
+            "value": "308-01"
+        },
+        {
+            "label": "函册(to)",
+            "value": "308-03"
+        },
+        {
+            "label": "函册(闕)",
+            "value": null
+        },
+        {
+            "label": "分類(1)",
+            "value": "又續藏"
+        },
+        {
+            "label": "分類(2)",
+            "value": null
+        },
+        {
+            "label": "分類(3)",
+            "value": null
+        },
+        {
+            "label": "刊記",
+            "value": "康煕10年刊"
+        },
+        {
+            "label": "寸法(横)",
+            "value": 14.2
+        },
+        {
+            "label": "寸法(縦）",
+            "value": 21.6
+        },
+        {
+            "label": "寸法（備考）",
+            "value": "二筆21.4×14.1cm(1a), 三筆21.6×14.0cm(1a)"
+        },
+        {
+            "label": "寸法（計測箇所）",
+            "value": "1a"
+        },
+        {
+            "label": "版式",
+            "value": "定型"
+        },
+        {
+            "label": "画像URL",
+            "value": null
+        },
+        {
+            "label": "經典名稱・卷數",
+            "value": "竹窓隨筆1卷二筆1卷三筆1卷"
+        },
+        {
+            "label": "經番",
+            "value": "U又續014"
+        },
+        {
+            "label": "詳目枝番(from)",
+            "value": 1
+        },
+        {
+            "label": "詳目枝番(to)",
+            "value": 7
+        },
+        {
+            "label": "譯著者",
+            "value": "明釋袾宏著"
+        },
+        {
+            "label": "譯著者1",
+            "value": "釋袾宏"
+        },
+        {
+            "label": "譯著者2",
+            "value": null
+        },
+        {
+            "label": "譯著者3",
+            "value": null
+        },
+        {
+            "label": "譯著者4",
+            "value": null
+        },
+        {
+            "label": "譯著者5",
+            "value": null
+        },
+        {
+            "label": "譯著者6",
+            "value": null
+        },
+        {
+            "label": "通番",
+            "value": 1956
+        }
+    ]
+}

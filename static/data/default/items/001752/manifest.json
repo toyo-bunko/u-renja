@@ -1,0 +1,116 @@
+{
+    "@context": "http://iiif.io/api/presentation/2/context.json",
+    "@id": "https://static.toyobunko-lab.jp/u-renja/data/default/items/001752/manifest.json",
+    "@type": "sc:Manifest",
+    "label": "1752",
+    "metadata": [
+        {
+            "label": "ID",
+            "value": 1752
+        },
+        {
+            "label": "備考",
+            "value": "版心題「八大人覺經略解」・「佛遺教經解」・「佛説四十二章經解」"
+        },
+        {
+            "label": "函册",
+            "value": "248-05"
+        },
+        {
+            "label": "函册(to)",
+            "value": null
+        },
+        {
+            "label": "函册(闕)",
+            "value": null
+        },
+        {
+            "label": "分類(1)",
+            "value": "續藏"
+        },
+        {
+            "label": "分類(2)",
+            "value": null
+        },
+        {
+            "label": "分類(3)",
+            "value": null
+        },
+        {
+            "label": "刊記",
+            "value": "順治5年刊, 不明年刊"
+        },
+        {
+            "label": "寸法(横)",
+            "value": 14.2
+        },
+        {
+            "label": "寸法(縦）",
+            "value": 22.3
+        },
+        {
+            "label": "寸法（備考）",
+            "value": "佛遺教經解21.3×13.9cm(1a), 佛説四十二章經解22.1×14.1cm(1a) "
+        },
+        {
+            "label": "寸法（計測箇所）",
+            "value": "八大人覺經略解1a"
+        },
+        {
+            "label": "版式",
+            "value": "單邊 有界9行20字 單白魚尾白口 句四聲點"
+        },
+        {
+            "label": "画像URL",
+            "value": null
+        },
+        {
+            "label": "經典名稱・卷數",
+            "value": "八大人覺經略解1卷佛遺教經解1卷佛説四十二章經解1卷 即三經解"
+        },
+        {
+            "label": "經番",
+            "value": "U續077"
+        },
+        {
+            "label": "詳目枝番(from)",
+            "value": 1
+        },
+        {
+            "label": "詳目枝番(to)",
+            "value": 4
+        },
+        {
+            "label": "譯著者",
+            "value": "明釋智旭著"
+        },
+        {
+            "label": "譯著者1",
+            "value": "釋智旭"
+        },
+        {
+            "label": "譯著者2",
+            "value": null
+        },
+        {
+            "label": "譯著者3",
+            "value": null
+        },
+        {
+            "label": "譯著者4",
+            "value": null
+        },
+        {
+            "label": "譯著者5",
+            "value": null
+        },
+        {
+            "label": "譯著者6",
+            "value": null
+        },
+        {
+            "label": "通番",
+            "value": 1752
+        }
+    ]
+}

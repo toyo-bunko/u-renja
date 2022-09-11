@@ -1,0 +1,116 @@
+{
+    "@context": "http://iiif.io/api/presentation/2/context.json",
+    "@id": "https://static.toyobunko-lab.jp/u-renja/data/default/items/001737/manifest.json",
+    "@type": "sc:Manifest",
+    "label": "1737",
+    "metadata": [
+        {
+            "label": "ID",
+            "value": 1737
+        },
+        {
+            "label": "備考",
+            "value": null
+        },
+        {
+            "label": "函册",
+            "value": "246-06"
+        },
+        {
+            "label": "函册(to)",
+            "value": null
+        },
+        {
+            "label": "函册(闕)",
+            "value": null
+        },
+        {
+            "label": "分類(1)",
+            "value": "續藏"
+        },
+        {
+            "label": "分類(2)",
+            "value": null
+        },
+        {
+            "label": "分類(3)",
+            "value": null
+        },
+        {
+            "label": "刊記",
+            "value": null
+        },
+        {
+            "label": "寸法(横)",
+            "value": 14.2
+        },
+        {
+            "label": "寸法(縦）",
+            "value": 21.8
+        },
+        {
+            "label": "寸法（備考）",
+            "value": null
+        },
+        {
+            "label": "寸法（計測箇所）",
+            "value": "1a"
+        },
+        {
+            "label": "版式",
+            "value": "單邊 有界9行20字 單白魚尾白口 句四聲點"
+        },
+        {
+            "label": "画像URL",
+            "value": null
+        },
+        {
+            "label": "經典名稱・卷數",
+            "value": "灌頂梵天神策經1卷"
+        },
+        {
+            "label": "經番",
+            "value": "U續062"
+        },
+        {
+            "label": "詳目枝番(from)",
+            "value": 1
+        },
+        {
+            "label": "詳目枝番(to)",
+            "value": 1
+        },
+        {
+            "label": "譯著者",
+            "value": "東晉帛尸梨蜜多羅譯"
+        },
+        {
+            "label": "譯著者1",
+            "value": "帛尸梨蜜多羅"
+        },
+        {
+            "label": "譯著者2",
+            "value": null
+        },
+        {
+            "label": "譯著者3",
+            "value": null
+        },
+        {
+            "label": "譯著者4",
+            "value": null
+        },
+        {
+            "label": "譯著者5",
+            "value": null
+        },
+        {
+            "label": "譯著者6",
+            "value": null
+        },
+        {
+            "label": "通番",
+            "value": 1737
+        }
+    ]
+}

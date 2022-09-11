@@ -1,0 +1,116 @@
+{
+    "@context": "http://iiif.io/api/presentation/2/context.json",
+    "@id": "https://static.toyobunko-lab.jp/u-renja/data/default/items/001736/manifest.json",
+    "@type": "sc:Manifest",
+    "label": "1736",
+    "metadata": [
+        {
+            "label": "ID",
+            "value": 1736
+        },
+        {
+            "label": "備考",
+            "value": null
+        },
+        {
+            "label": "函册",
+            "value": "246-05"
+        },
+        {
+            "label": "函册(to)",
+            "value": null
+        },
+        {
+            "label": "函册(闕)",
+            "value": null
+        },
+        {
+            "label": "分類(1)",
+            "value": "續藏"
+        },
+        {
+            "label": "分類(2)",
+            "value": null
+        },
+        {
+            "label": "分類(3)",
+            "value": null
+        },
+        {
+            "label": "刊記",
+            "value": "不明年刊"
+        },
+        {
+            "label": "寸法(横)",
+            "value": 14.6
+        },
+        {
+            "label": "寸法(縦）",
+            "value": 21.5
+        },
+        {
+            "label": "寸法（備考）",
+            "value": null
+        },
+        {
+            "label": "寸法（計測箇所）",
+            "value": "卷一1a"
+        },
+        {
+            "label": "版式",
+            "value": "單邊 有界10行19字 無魚尾白口 句四聲點"
+        },
+        {
+            "label": "画像URL",
+            "value": null
+        },
+        {
+            "label": "經典名稱・卷數",
+            "value": "得遇龍華修證懺儀1卷坿布袋和尚傳1卷坿傅大士傳1卷坿大阿羅漢難提蜜多羅所説法住記1卷"
+        },
+        {
+            "label": "經番",
+            "value": "U續061"
+        },
+        {
+            "label": "詳目枝番(from)",
+            "value": 1
+        },
+        {
+            "label": "詳目枝番(to)",
+            "value": 10
+        },
+        {
+            "label": "譯著者",
+            "value": "明釋如惺撰"
+        },
+        {
+            "label": "譯著者1",
+            "value": "釋如惺"
+        },
+        {
+            "label": "譯著者2",
+            "value": null
+        },
+        {
+            "label": "譯著者3",
+            "value": null
+        },
+        {
+            "label": "譯著者4",
+            "value": null
+        },
+        {
+            "label": "譯著者5",
+            "value": null
+        },
+        {
+            "label": "譯著者6",
+            "value": null
+        },
+        {
+            "label": "通番",
+            "value": 1736
+        }
+    ]
+}

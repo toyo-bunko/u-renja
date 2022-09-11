@@ -1,0 +1,116 @@
+{
+    "@context": "http://iiif.io/api/presentation/2/context.json",
+    "@id": "https://static.toyobunko-lab.jp/u-renja/data/default/items/001491/manifest.json",
+    "@type": "sc:Manifest",
+    "label": "1491",
+    "metadata": [
+        {
+            "label": "ID",
+            "value": 1491
+        },
+        {
+            "label": "備考",
+            "value": null
+        },
+        {
+            "label": "函册",
+            "value": "153-01"
+        },
+        {
+            "label": "函册(to)",
+            "value": "153-08"
+        },
+        {
+            "label": "函册(闕)",
+            "value": null
+        },
+        {
+            "label": "分類(1)",
+            "value": "此土著述"
+        },
+        {
+            "label": "分類(2)",
+            "value": null
+        },
+        {
+            "label": "分類(3)",
+            "value": null
+        },
+        {
+            "label": "刊記",
+            "value": null
+        },
+        {
+            "label": "寸法(横)",
+            "value": 14.1
+        },
+        {
+            "label": "寸法(縦）",
+            "value": 21.7
+        },
+        {
+            "label": "寸法（備考）",
+            "value": null
+        },
+        {
+            "label": "寸法（計測箇所）",
+            "value": "卷一1a"
+        },
+        {
+            "label": "版式",
+            "value": "定型"
+        },
+        {
+            "label": "画像URL",
+            "value": null
+        },
+        {
+            "label": "經典名稱・卷數",
+            "value": "開元釋教録20卷坿音釋"
+        },
+        {
+            "label": "經番",
+            "value": "U1478"
+        },
+        {
+            "label": "詳目枝番(from)",
+            "value": 1
+        },
+        {
+            "label": "詳目枝番(to)",
+            "value": 30
+        },
+        {
+            "label": "譯著者",
+            "value": "唐釋智昇撰"
+        },
+        {
+            "label": "譯著者1",
+            "value": "釋智昇"
+        },
+        {
+            "label": "譯著者2",
+            "value": null
+        },
+        {
+            "label": "譯著者3",
+            "value": null
+        },
+        {
+            "label": "譯著者4",
+            "value": null
+        },
+        {
+            "label": "譯著者5",
+            "value": null
+        },
+        {
+            "label": "譯著者6",
+            "value": null
+        },
+        {
+            "label": "通番",
+            "value": 1491
+        }
+    ]
+}

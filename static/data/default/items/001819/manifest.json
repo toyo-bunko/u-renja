@@ -1,0 +1,116 @@
+{
+    "@context": "http://iiif.io/api/presentation/2/context.json",
+    "@id": "https://static.toyobunko-lab.jp/u-renja/data/default/items/001819/manifest.json",
+    "@type": "sc:Manifest",
+    "label": "1819",
+    "metadata": [
+        {
+            "label": "ID",
+            "value": 1819
+        },
+        {
+            "label": "備考",
+            "value": "卷三39・40丁己巳補刻. 卷四65丁己巳補刻"
+        },
+        {
+            "label": "函册",
+            "value": "266-06"
+        },
+        {
+            "label": "函册(to)",
+            "value": "266-07"
+        },
+        {
+            "label": "函册(闕)",
+            "value": null
+        },
+        {
+            "label": "分類(1)",
+            "value": "續藏"
+        },
+        {
+            "label": "分類(2)",
+            "value": null
+        },
+        {
+            "label": "分類(3)",
+            "value": null
+        },
+        {
+            "label": "刊記",
+            "value": null
+        },
+        {
+            "label": "寸法(横)",
+            "value": 14
+        },
+        {
+            "label": "寸法(縦）",
+            "value": 22.5
+        },
+        {
+            "label": "寸法（備考）",
+            "value": null
+        },
+        {
+            "label": "寸法（計測箇所）",
+            "value": "卷一1a"
+        },
+        {
+            "label": "版式",
+            "value": "雙邊 無界9行21字 無魚尾上白口下小黒口 句點 傍線 傍點"
+        },
+        {
+            "label": "画像URL",
+            "value": null
+        },
+        {
+            "label": "經典名稱・卷數",
+            "value": "高僧摘要4卷"
+        },
+        {
+            "label": "經番",
+            "value": "U續144"
+        },
+        {
+            "label": "詳目枝番(from)",
+            "value": 1
+        },
+        {
+            "label": "詳目枝番(to)",
+            "value": 10
+        },
+        {
+            "label": "譯著者",
+            "value": "淸徐昌治編輯"
+        },
+        {
+            "label": "譯著者1",
+            "value": "徐昌治"
+        },
+        {
+            "label": "譯著者2",
+            "value": null
+        },
+        {
+            "label": "譯著者3",
+            "value": null
+        },
+        {
+            "label": "譯著者4",
+            "value": null
+        },
+        {
+            "label": "譯著者5",
+            "value": null
+        },
+        {
+            "label": "譯著者6",
+            "value": null
+        },
+        {
+            "label": "通番",
+            "value": 1819
+        }
+    ]
+}

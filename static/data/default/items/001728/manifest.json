@@ -1,0 +1,116 @@
+{
+    "@context": "http://iiif.io/api/presentation/2/context.json",
+    "@id": "https://static.toyobunko-lab.jp/u-renja/data/default/items/001728/manifest.json",
+    "@type": "sc:Manifest",
+    "label": "1728",
+    "metadata": [
+        {
+            "label": "ID",
+            "value": 1728
+        },
+        {
+            "label": "備考",
+            "value": null
+        },
+        {
+            "label": "函册",
+            "value": "245-04"
+        },
+        {
+            "label": "函册(to)",
+            "value": null
+        },
+        {
+            "label": "函册(闕)",
+            "value": null
+        },
+        {
+            "label": "分類(1)",
+            "value": "續藏"
+        },
+        {
+            "label": "分類(2)",
+            "value": null
+        },
+        {
+            "label": "分類(3)",
+            "value": null
+        },
+        {
+            "label": "刊記",
+            "value": null
+        },
+        {
+            "label": "寸法(横)",
+            "value": 14.3
+        },
+        {
+            "label": "寸法(縦）",
+            "value": 23
+        },
+        {
+            "label": "寸法（備考）",
+            "value": null
+        },
+        {
+            "label": "寸法（計測箇所）",
+            "value": "1a"
+        },
+        {
+            "label": "版式",
+            "value": "定型"
+        },
+        {
+            "label": "画像URL",
+            "value": null
+        },
+        {
+            "label": "經典名稱・卷數",
+            "value": "觀世音持驗紀1卷坿妙法蓮華經觀世音菩薩普門品1卷坿觀世音大悲心陀羅尼1卷坿白衣大悲五印心陀羅尼經1卷坿般若波羅蜜多心經1卷坿禮觀音文1卷"
+        },
+        {
+            "label": "經番",
+            "value": "U續053"
+        },
+        {
+            "label": "詳目枝番(from)",
+            "value": 1
+        },
+        {
+            "label": "詳目枝番(to)",
+            "value": 10
+        },
+        {
+            "label": "譯著者",
+            "value": "淸周克復撰"
+        },
+        {
+            "label": "譯著者1",
+            "value": "周克復"
+        },
+        {
+            "label": "譯著者2",
+            "value": null
+        },
+        {
+            "label": "譯著者3",
+            "value": null
+        },
+        {
+            "label": "譯著者4",
+            "value": null
+        },
+        {
+            "label": "譯著者5",
+            "value": null
+        },
+        {
+            "label": "譯著者6",
+            "value": null
+        },
+        {
+            "label": "通番",
+            "value": 1728
+        }
+    ]
+}

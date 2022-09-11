@@ -1,0 +1,116 @@
+{
+    "@context": "http://iiif.io/api/presentation/2/context.json",
+    "@id": "https://static.toyobunko-lab.jp/u-renja/data/default/items/001544/manifest.json",
+    "@type": "sc:Manifest",
+    "label": "1544",
+    "metadata": [
+        {
+            "label": "ID",
+            "value": 1544
+        },
+        {
+            "label": "備考",
+            "value": "卷十下24a「玄義文句舊板南藏／差甚北藏所差但稍／愈於南此板乃互取／其是而刻之者唯若／于蘇字仍依於南耳／刻板者謹書」"
+        },
+        {
+            "label": "函册",
+            "value": "167-01"
+        },
+        {
+            "label": "函册(to)",
+            "value": "167-05"
+        },
+        {
+            "label": "函册(闕)",
+            "value": null
+        },
+        {
+            "label": "分類(1)",
+            "value": "此土著述"
+        },
+        {
+            "label": "分類(2)",
+            "value": null
+        },
+        {
+            "label": "分類(3)",
+            "value": null
+        },
+        {
+            "label": "刊記",
+            "value": null
+        },
+        {
+            "label": "寸法(横)",
+            "value": 13.6
+        },
+        {
+            "label": "寸法(縦）",
+            "value": 21.5
+        },
+        {
+            "label": "寸法（備考）",
+            "value": null
+        },
+        {
+            "label": "寸法（計測箇所）",
+            "value": "卷一上1a"
+        },
+        {
+            "label": "版式",
+            "value": "單邊 有界10行20字 單魚尾白口 無點"
+        },
+        {
+            "label": "画像URL",
+            "value": null
+        },
+        {
+            "label": "經典名稱・卷數",
+            "value": "妙法蓮華經玄義10卷"
+        },
+        {
+            "label": "經番",
+            "value": "U1527"
+        },
+        {
+            "label": "詳目枝番(from)",
+            "value": 1
+        },
+        {
+            "label": "詳目枝番(to)",
+            "value": 21
+        },
+        {
+            "label": "譯著者",
+            "value": "隋釋智顗説, 唐釋灌頂記"
+        },
+        {
+            "label": "譯著者1",
+            "value": "釋智顗"
+        },
+        {
+            "label": "譯著者2",
+            "value": "釋灌頂"
+        },
+        {
+            "label": "譯著者3",
+            "value": null
+        },
+        {
+            "label": "譯著者4",
+            "value": null
+        },
+        {
+            "label": "譯著者5",
+            "value": null
+        },
+        {
+            "label": "譯著者6",
+            "value": null
+        },
+        {
+            "label": "通番",
+            "value": 1544
+        }
+    ]
+}

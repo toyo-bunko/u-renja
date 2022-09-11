@@ -1,0 +1,116 @@
+{
+    "@context": "http://iiif.io/api/presentation/2/context.json",
+    "@id": "https://static.toyobunko-lab.jp/u-renja/data/default/items/001545/manifest.json",
+    "@type": "sc:Manifest",
+    "label": "1545",
+    "metadata": [
+        {
+            "label": "ID",
+            "value": 1545
+        },
+        {
+            "label": "備考",
+            "value": "題簽題「妙法蓮華經玄籤」. 版心題「妙玄籤」"
+        },
+        {
+            "label": "函册",
+            "value": "168-01"
+        },
+        {
+            "label": "函册(to)",
+            "value": "168-11"
+        },
+        {
+            "label": "函册(闕)",
+            "value": null
+        },
+        {
+            "label": "分類(1)",
+            "value": "此土著述"
+        },
+        {
+            "label": "分類(2)",
+            "value": null
+        },
+        {
+            "label": "分類(3)",
+            "value": null
+        },
+        {
+            "label": "刊記",
+            "value": "萬暦8・9年刊, 不明年刊"
+        },
+        {
+            "label": "寸法(横)",
+            "value": 12.5
+        },
+        {
+            "label": "寸法(縦）",
+            "value": 19.7
+        },
+        {
+            "label": "寸法（備考）",
+            "value": null
+        },
+        {
+            "label": "寸法（計測箇所）",
+            "value": "卷一上1a"
+        },
+        {
+            "label": "版式",
+            "value": "左右雙邊 有界11行20字 單白魚尾小黒口 無點"
+        },
+        {
+            "label": "画像URL",
+            "value": null
+        },
+        {
+            "label": "經典名稱・卷數",
+            "value": "妙法蓮華經玄義10卷縁起序1卷坿科文2卷"
+        },
+        {
+            "label": "經番",
+            "value": "U1528"
+        },
+        {
+            "label": "詳目枝番(from)",
+            "value": 1
+        },
+        {
+            "label": "詳目枝番(to)",
+            "value": 24
+        },
+        {
+            "label": "譯著者",
+            "value": "隋釋智顗説, 唐釋灌頂記, 唐釋湛然釋籤"
+        },
+        {
+            "label": "譯著者1",
+            "value": "釋智顗"
+        },
+        {
+            "label": "譯著者2",
+            "value": "釋灌頂"
+        },
+        {
+            "label": "譯著者3",
+            "value": "釋湛然"
+        },
+        {
+            "label": "譯著者4",
+            "value": null
+        },
+        {
+            "label": "譯著者5",
+            "value": null
+        },
+        {
+            "label": "譯著者6",
+            "value": null
+        },
+        {
+            "label": "通番",
+            "value": 1545
+        }
+    ]
+}

@@ -1,0 +1,116 @@
+{
+    "@context": "http://iiif.io/api/presentation/2/context.json",
+    "@id": "https://static.toyobunko-lab.jp/u-renja/data/default/items/001889/manifest.json",
+    "@type": "sc:Manifest",
+    "label": "1889",
+    "metadata": [
+        {
+            "label": "ID",
+            "value": 1889
+        },
+        {
+            "label": "備考",
+            "value": null
+        },
+        {
+            "label": "函册",
+            "value": "288-02"
+        },
+        {
+            "label": "函册(to)",
+            "value": null
+        },
+        {
+            "label": "函册(闕)",
+            "value": null
+        },
+        {
+            "label": "分類(1)",
+            "value": "續藏"
+        },
+        {
+            "label": "分類(2)",
+            "value": null
+        },
+        {
+            "label": "分類(3)",
+            "value": null
+        },
+        {
+            "label": "刊記",
+            "value": null
+        },
+        {
+            "label": "寸法(横)",
+            "value": 13.9
+        },
+        {
+            "label": "寸法(縦）",
+            "value": 21.1
+        },
+        {
+            "label": "寸法（備考）",
+            "value": null
+        },
+        {
+            "label": "寸法（計測箇所）",
+            "value": "卷上1a"
+        },
+        {
+            "label": "版式",
+            "value": "定型"
+        },
+        {
+            "label": "画像URL",
+            "value": null
+        },
+        {
+            "label": "經典名稱・卷數",
+            "value": "普明鴛湖用禪師語録2卷坿塔銘1卷坿行状1卷"
+        },
+        {
+            "label": "經番",
+            "value": "U續214"
+        },
+        {
+            "label": "詳目枝番(from)",
+            "value": 1
+        },
+        {
+            "label": "詳目枝番(to)",
+            "value": 6
+        },
+        {
+            "label": "譯著者",
+            "value": "明釋妙用説, 淸釋悟進・釋悟元等編"
+        },
+        {
+            "label": "譯著者1",
+            "value": "釋妙用"
+        },
+        {
+            "label": "譯著者2",
+            "value": "釋悟進"
+        },
+        {
+            "label": "譯著者3",
+            "value": "釋悟元"
+        },
+        {
+            "label": "譯著者4",
+            "value": null
+        },
+        {
+            "label": "譯著者5",
+            "value": null
+        },
+        {
+            "label": "譯著者6",
+            "value": null
+        },
+        {
+            "label": "通番",
+            "value": 1889
+        }
+    ]
+}

@@ -1,0 +1,116 @@
+{
+    "@context": "http://iiif.io/api/presentation/2/context.json",
+    "@id": "https://static.toyobunko-lab.jp/u-renja/data/default/items/002003/manifest.json",
+    "@type": "sc:Manifest",
+    "label": "2003",
+    "metadata": [
+        {
+            "label": "ID",
+            "value": 2003
+        },
+        {
+            "label": "備考",
+            "value": null
+        },
+        {
+            "label": "函册",
+            "value": "319-03"
+        },
+        {
+            "label": "函册(to)",
+            "value": null
+        },
+        {
+            "label": "函册(闕)",
+            "value": null
+        },
+        {
+            "label": "分類(1)",
+            "value": "又續藏"
+        },
+        {
+            "label": "分類(2)",
+            "value": null
+        },
+        {
+            "label": "分類(3)",
+            "value": null
+        },
+        {
+            "label": "刊記",
+            "value": "康煕22・23年刊"
+        },
+        {
+            "label": "寸法(横)",
+            "value": 12.1
+        },
+        {
+            "label": "寸法(縦）",
+            "value": 19.6
+        },
+        {
+            "label": "寸法（備考）",
+            "value": null
+        },
+        {
+            "label": "寸法（計測箇所）",
+            "value": "卷一1a"
+        },
+        {
+            "label": "版式",
+            "value": "定型"
+        },
+        {
+            "label": "画像URL",
+            "value": null
+        },
+        {
+            "label": "經典名稱・卷數",
+            "value": "鼎湖山木人居在犙禪師剩稿5卷坿音釋"
+        },
+        {
+            "label": "經番",
+            "value": "U又續061"
+        },
+        {
+            "label": "詳目枝番(from)",
+            "value": 1
+        },
+        {
+            "label": "詳目枝番(to)",
+            "value": 7
+        },
+        {
+            "label": "譯著者",
+            "value": "淸釋弘賛説, 淸釋開溈録"
+        },
+        {
+            "label": "譯著者1",
+            "value": "釋弘賛"
+        },
+        {
+            "label": "譯著者2",
+            "value": "釋開溈"
+        },
+        {
+            "label": "譯著者3",
+            "value": null
+        },
+        {
+            "label": "譯著者4",
+            "value": null
+        },
+        {
+            "label": "譯著者5",
+            "value": null
+        },
+        {
+            "label": "譯著者6",
+            "value": null
+        },
+        {
+            "label": "通番",
+            "value": 2003
+        }
+    ]
+}

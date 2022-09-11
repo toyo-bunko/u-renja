@@ -1,0 +1,116 @@
+{
+    "@context": "http://iiif.io/api/presentation/2/context.json",
+    "@id": "https://static.toyobunko-lab.jp/u-renja/data/default/items/000093/manifest.json",
+    "@type": "sc:Manifest",
+    "label": "93",
+    "metadata": [
+        {
+            "label": "ID",
+            "value": 93
+        },
+        {
+            "label": "備考",
+            "value": null
+        },
+        {
+            "label": "函册",
+            "value": "033-03"
+        },
+        {
+            "label": "函册(to)",
+            "value": null
+        },
+        {
+            "label": "函册(闕)",
+            "value": null
+        },
+        {
+            "label": "分類(1)",
+            "value": "經"
+        },
+        {
+            "label": "分類(2)",
+            "value": "大乘經"
+        },
+        {
+            "label": "分類(3)",
+            "value": "華嚴部"
+        },
+        {
+            "label": "刊記",
+            "value": "萬暦26年刊"
+        },
+        {
+            "label": "寸法(横)",
+            "value": 14.4
+        },
+        {
+            "label": "寸法(縦）",
+            "value": 23
+        },
+        {
+            "label": "寸法（備考）",
+            "value": null
+        },
+        {
+            "label": "寸法（計測箇所）",
+            "value": "1a"
+        },
+        {
+            "label": "版式",
+            "value": "定型"
+        },
+        {
+            "label": "画像URL",
+            "value": null
+        },
+        {
+            "label": "經典名稱・卷數",
+            "value": "大方廣入如來智德不思議經1卷坿音釋"
+        },
+        {
+            "label": "經番",
+            "value": "U0089"
+        },
+        {
+            "label": "詳目枝番(from)",
+            "value": 1
+        },
+        {
+            "label": "詳目枝番(to)",
+            "value": 2
+        },
+        {
+            "label": "譯著者",
+            "value": "唐實叉難陀譯"
+        },
+        {
+            "label": "譯著者1",
+            "value": "實叉難陀"
+        },
+        {
+            "label": "譯著者2",
+            "value": null
+        },
+        {
+            "label": "譯著者3",
+            "value": null
+        },
+        {
+            "label": "譯著者4",
+            "value": null
+        },
+        {
+            "label": "譯著者5",
+            "value": null
+        },
+        {
+            "label": "譯著者6",
+            "value": null
+        },
+        {
+            "label": "通番",
+            "value": 93
+        }
+    ]
+}

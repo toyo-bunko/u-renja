@@ -1,0 +1,116 @@
+{
+    "@context": "http://iiif.io/api/presentation/2/context.json",
+    "@id": "https://static.toyobunko-lab.jp/u-renja/data/default/items/001833/manifest.json",
+    "@type": "sc:Manifest",
+    "label": "1833",
+    "metadata": [
+        {
+            "label": "ID",
+            "value": 1833
+        },
+        {
+            "label": "備考",
+            "value": null
+        },
+        {
+            "label": "函册",
+            "value": "272-03"
+        },
+        {
+            "label": "函册(to)",
+            "value": "272-06"
+        },
+        {
+            "label": "函册(闕)",
+            "value": null
+        },
+        {
+            "label": "分類(1)",
+            "value": "續藏"
+        },
+        {
+            "label": "分類(2)",
+            "value": null
+        },
+        {
+            "label": "分類(3)",
+            "value": null
+        },
+        {
+            "label": "刊記",
+            "value": "萬暦18年刊"
+        },
+        {
+            "label": "寸法(横)",
+            "value": 15
+        },
+        {
+            "label": "寸法(縦）",
+            "value": 23.5
+        },
+        {
+            "label": "寸法（備考）",
+            "value": null
+        },
+        {
+            "label": "寸法（計測箇所）",
+            "value": "卷一7a"
+        },
+        {
+            "label": "版式",
+            "value": "定型"
+        },
+        {
+            "label": "画像URL",
+            "value": null
+        },
+        {
+            "label": "經典名稱・卷數",
+            "value": "佛日普照慧辯楚石禪師語録20卷坿音切"
+        },
+        {
+            "label": "經番",
+            "value": "U續158"
+        },
+        {
+            "label": "詳目枝番(from)",
+            "value": 1
+        },
+        {
+            "label": "詳目枝番(to)",
+            "value": 23
+        },
+        {
+            "label": "譯著者",
+            "value": "元釋楚琦説, 元釋祖光等編"
+        },
+        {
+            "label": "譯著者1",
+            "value": "釋楚琦"
+        },
+        {
+            "label": "譯著者2",
+            "value": "釋祖光"
+        },
+        {
+            "label": "譯著者3",
+            "value": null
+        },
+        {
+            "label": "譯著者4",
+            "value": null
+        },
+        {
+            "label": "譯著者5",
+            "value": null
+        },
+        {
+            "label": "譯著者6",
+            "value": null
+        },
+        {
+            "label": "通番",
+            "value": 1833
+        }
+    ]
+}

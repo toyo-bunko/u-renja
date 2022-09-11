@@ -1,0 +1,116 @@
+{
+    "@context": "http://iiif.io/api/presentation/2/context.json",
+    "@id": "https://static.toyobunko-lab.jp/u-renja/data/default/items/001647/manifest.json",
+    "@type": "sc:Manifest",
+    "label": "1647",
+    "metadata": [
+        {
+            "label": "ID",
+            "value": 1647
+        },
+        {
+            "label": "備考",
+            "value": null
+        },
+        {
+            "label": "函册",
+            "value": "200-01"
+        },
+        {
+            "label": "函册(to)",
+            "value": "200-10"
+        },
+        {
+            "label": "函册(闕)",
+            "value": null
+        },
+        {
+            "label": "分類(1)",
+            "value": "大明續入藏諸集"
+        },
+        {
+            "label": "分類(2)",
+            "value": null
+        },
+        {
+            "label": "分類(3)",
+            "value": null
+        },
+        {
+            "label": "刊記",
+            "value": "隆慶5, 萬暦2-4年刊, 不明年刊"
+        },
+        {
+            "label": "寸法(横)",
+            "value": 12.3
+        },
+        {
+            "label": "寸法(縦）",
+            "value": 18.6
+        },
+        {
+            "label": "寸法（備考）",
+            "value": null
+        },
+        {
+            "label": "寸法（計測箇所）",
+            "value": "卷一1a"
+        },
+        {
+            "label": "版式",
+            "value": "左右雙邊 有界10行20字 單魚尾白口（まま線黒口あり） 首書"
+        },
+        {
+            "label": "画像URL",
+            "value": null
+        },
+        {
+            "label": "經典名稱・卷數",
+            "value": "佛祖歴代通載22卷目録1卷"
+        },
+        {
+            "label": "經番",
+            "value": "U1631"
+        },
+        {
+            "label": "詳目枝番(from)",
+            "value": 1
+        },
+        {
+            "label": "詳目枝番(to)",
+            "value": 30
+        },
+        {
+            "label": "譯著者",
+            "value": "元釋念常集"
+        },
+        {
+            "label": "譯著者1",
+            "value": "釋念常"
+        },
+        {
+            "label": "譯著者2",
+            "value": null
+        },
+        {
+            "label": "譯著者3",
+            "value": null
+        },
+        {
+            "label": "譯著者4",
+            "value": null
+        },
+        {
+            "label": "譯著者5",
+            "value": null
+        },
+        {
+            "label": "譯著者6",
+            "value": null
+        },
+        {
+            "label": "通番",
+            "value": 1647
+        }
+    ]
+}

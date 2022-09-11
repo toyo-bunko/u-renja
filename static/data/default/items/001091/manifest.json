@@ -1,0 +1,116 @@
+{
+    "@context": "http://iiif.io/api/presentation/2/context.json",
+    "@id": "https://static.toyobunko-lab.jp/u-renja/data/default/items/001091/manifest.json",
+    "@type": "sc:Manifest",
+    "label": "1091",
+    "metadata": [
+        {
+            "label": "ID",
+            "value": 1091
+        },
+        {
+            "label": "備考",
+            "value": null
+        },
+        {
+            "label": "函册",
+            "value": "083-01"
+        },
+        {
+            "label": "函册(to)",
+            "value": "083-02"
+        },
+        {
+            "label": "函册(闕)",
+            "value": "(闕）"
+        },
+        {
+            "label": "分類(1)",
+            "value": "律"
+        },
+        {
+            "label": "分類(2)",
+            "value": "大乘律"
+        },
+        {
+            "label": "分類(3)",
+            "value": null
+        },
+        {
+            "label": "刊記",
+            "value": null
+        },
+        {
+            "label": "寸法(横)",
+            "value": null
+        },
+        {
+            "label": "寸法(縦）",
+            "value": null
+        },
+        {
+            "label": "寸法（備考）",
+            "value": null
+        },
+        {
+            "label": "寸法（計測箇所）",
+            "value": null
+        },
+        {
+            "label": "版式",
+            "value": null
+        },
+        {
+            "label": "画像URL",
+            "value": null
+        },
+        {
+            "label": "經典名稱・卷數",
+            "value": "菩薩善戒經"
+        },
+        {
+            "label": "經番",
+            "value": "U1080"
+        },
+        {
+            "label": "詳目枝番(from)",
+            "value": 1
+        },
+        {
+            "label": "詳目枝番(to)",
+            "value": 2
+        },
+        {
+            "label": "譯著者",
+            "value": "劉宋求那跋摩等譯"
+        },
+        {
+            "label": "譯著者1",
+            "value": "求那跋摩"
+        },
+        {
+            "label": "譯著者2",
+            "value": null
+        },
+        {
+            "label": "譯著者3",
+            "value": null
+        },
+        {
+            "label": "譯著者4",
+            "value": null
+        },
+        {
+            "label": "譯著者5",
+            "value": null
+        },
+        {
+            "label": "譯著者6",
+            "value": null
+        },
+        {
+            "label": "通番",
+            "value": 1091
+        }
+    ]
+}

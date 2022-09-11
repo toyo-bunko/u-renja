@@ -1,0 +1,116 @@
+{
+    "@context": "http://iiif.io/api/presentation/2/context.json",
+    "@id": "https://static.toyobunko-lab.jp/u-renja/data/default/items/001808/manifest.json",
+    "@type": "sc:Manifest",
+    "label": "1808",
+    "metadata": [
+        {
+            "label": "ID",
+            "value": 1808
+        },
+        {
+            "label": "備考",
+            "value": null
+        },
+        {
+            "label": "函册",
+            "value": "264-01"
+        },
+        {
+            "label": "函册(to)",
+            "value": "264-04"
+        },
+        {
+            "label": "函册(闕)",
+            "value": null
+        },
+        {
+            "label": "分類(1)",
+            "value": "續藏"
+        },
+        {
+            "label": "分類(2)",
+            "value": null
+        },
+        {
+            "label": "分類(3)",
+            "value": null
+        },
+        {
+            "label": "刊記",
+            "value": "順治10・11年刊"
+        },
+        {
+            "label": "寸法(横)",
+            "value": 10.8
+        },
+        {
+            "label": "寸法(縦）",
+            "value": 18.6
+        },
+        {
+            "label": "寸法（備考）",
+            "value": null
+        },
+        {
+            "label": "寸法（計測箇所）",
+            "value": "卷一1a"
+        },
+        {
+            "label": "版式",
+            "value": "雙邊 有界8行18字 無魚尾上白口下小黒口 無點"
+        },
+        {
+            "label": "画像URL",
+            "value": null
+        },
+        {
+            "label": "經典名稱・卷數",
+            "value": "佛果圜悟禪師碧岩集10卷坿音釋"
+        },
+        {
+            "label": "經番",
+            "value": "U續133"
+        },
+        {
+            "label": "詳目枝番(from)",
+            "value": 1
+        },
+        {
+            "label": "詳目枝番(to)",
+            "value": 13
+        },
+        {
+            "label": "譯著者",
+            "value": "宋釋重顯頌古, 宋釋克勤評唱, □呉自弘校, □釋性湛閲"
+        },
+        {
+            "label": "譯著者1",
+            "value": "釋重顯"
+        },
+        {
+            "label": "譯著者2",
+            "value": "釋克勤"
+        },
+        {
+            "label": "譯著者3",
+            "value": "呉自弘"
+        },
+        {
+            "label": "譯著者4",
+            "value": "釋性湛"
+        },
+        {
+            "label": "譯著者5",
+            "value": null
+        },
+        {
+            "label": "譯著者6",
+            "value": null
+        },
+        {
+            "label": "通番",
+            "value": 1808
+        }
+    ]
+}

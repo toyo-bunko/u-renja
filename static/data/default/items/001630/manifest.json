@@ -1,0 +1,116 @@
+{
+    "@context": "http://iiif.io/api/presentation/2/context.json",
+    "@id": "https://static.toyobunko-lab.jp/u-renja/data/default/items/001630/manifest.json",
+    "@type": "sc:Manifest",
+    "label": "1630",
+    "metadata": [
+        {
+            "label": "ID",
+            "value": 1630
+        },
+        {
+            "label": "備考",
+            "value": "卷一至三者總目也"
+        },
+        {
+            "label": "函册",
+            "value": "191-01"
+        },
+        {
+            "label": "函册(to)",
+            "value": "192-05"
+        },
+        {
+            "label": "函册(闕)",
+            "value": null
+        },
+        {
+            "label": "分類(1)",
+            "value": "此土著述"
+        },
+        {
+            "label": "分類(2)",
+            "value": null
+        },
+        {
+            "label": "分類(3)",
+            "value": null
+        },
+        {
+            "label": "刊記",
+            "value": "萬暦21-23年刊"
+        },
+        {
+            "label": "寸法(横)",
+            "value": 14.9
+        },
+        {
+            "label": "寸法(縦）",
+            "value": 23
+        },
+        {
+            "label": "寸法（備考）",
+            "value": "卷四23.0×14.9cm(1a)"
+        },
+        {
+            "label": "寸法（計測箇所）",
+            "value": "總目一1a"
+        },
+        {
+            "label": "版式",
+            "value": "定型"
+        },
+        {
+            "label": "画像URL",
+            "value": null
+        },
+        {
+            "label": "經典名稱・卷數",
+            "value": "大明三藏法數50卷"
+        },
+        {
+            "label": "經番",
+            "value": "U1615"
+        },
+        {
+            "label": "詳目枝番(from)",
+            "value": 1
+        },
+        {
+            "label": "詳目枝番(to)",
+            "value": 50
+        },
+        {
+            "label": "譯著者",
+            "value": "明釋一如等編集"
+        },
+        {
+            "label": "譯著者1",
+            "value": "釋一如"
+        },
+        {
+            "label": "譯著者2",
+            "value": null
+        },
+        {
+            "label": "譯著者3",
+            "value": null
+        },
+        {
+            "label": "譯著者4",
+            "value": null
+        },
+        {
+            "label": "譯著者5",
+            "value": null
+        },
+        {
+            "label": "譯著者6",
+            "value": null
+        },
+        {
+            "label": "通番",
+            "value": 1630
+        }
+    ]
+}

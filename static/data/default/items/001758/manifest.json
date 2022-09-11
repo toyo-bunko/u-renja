@@ -1,0 +1,116 @@
+{
+    "@context": "http://iiif.io/api/presentation/2/context.json",
+    "@id": "https://static.toyobunko-lab.jp/u-renja/data/default/items/001758/manifest.json",
+    "@type": "sc:Manifest",
+    "label": "1758",
+    "metadata": [
+        {
+            "label": "ID",
+            "value": 1758
+        },
+        {
+            "label": "備考",
+            "value": "題簽題「相宗八要」. 唐奘師眞唯識量之版心題「三支比量」"
+        },
+        {
+            "label": "函册",
+            "value": "249-01"
+        },
+        {
+            "label": "函册(to)",
+            "value": null
+        },
+        {
+            "label": "函册(闕)",
+            "value": null
+        },
+        {
+            "label": "分類(1)",
+            "value": "續藏"
+        },
+        {
+            "label": "分類(2)",
+            "value": null
+        },
+        {
+            "label": "分類(3)",
+            "value": null
+        },
+        {
+            "label": "刊記",
+            "value": null
+        },
+        {
+            "label": "寸法(横)",
+            "value": 12
+        },
+        {
+            "label": "寸法(縦）",
+            "value": 19.2
+        },
+        {
+            "label": "寸法（備考）",
+            "value": null
+        },
+        {
+            "label": "寸法（計測箇所）",
+            "value": "因明入正理論3b"
+        },
+        {
+            "label": "版式",
+            "value": "單邊 有界7行17字 單白魚尾線黒口 句點"
+        },
+        {
+            "label": "画像URL",
+            "value": null
+        },
+        {
+            "label": "經典名稱・卷數",
+            "value": "因明入正理論1卷規矩頌1卷大乘百法明門論1卷唯識三十論1卷觀所縁縁論1卷唐奘師眞唯識量1卷六離合釋法式1卷觀所縁論釋1卷 即相宗八要"
+        },
+        {
+            "label": "經番",
+            "value": "U續083"
+        },
+        {
+            "label": "詳目枝番(from)",
+            "value": 1
+        },
+        {
+            "label": "詳目枝番(to)",
+            "value": 11
+        },
+        {
+            "label": "譯著者",
+            "value": "□闕名編"
+        },
+        {
+            "label": "譯著者1",
+            "value": null
+        },
+        {
+            "label": "譯著者2",
+            "value": null
+        },
+        {
+            "label": "譯著者3",
+            "value": null
+        },
+        {
+            "label": "譯著者4",
+            "value": null
+        },
+        {
+            "label": "譯著者5",
+            "value": null
+        },
+        {
+            "label": "譯著者6",
+            "value": null
+        },
+        {
+            "label": "通番",
+            "value": 1758
+        }
+    ]
+}
