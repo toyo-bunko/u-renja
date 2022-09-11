@@ -1,1 +1,13 @@
-{}
+{
+    "@context": "http://iiif.io/api/presentation/2/context.json",
+    "@id": "https://static.toyobunko-lab.jp/u-renja/api/iiif/items/1528-1/manifest.json",
+    "@type": "sc:Manifest",
+    "label": "天台智者大師齋忌禮讚文1卷",
+    "sequences": [
+        {
+            "@id": "https://static.toyobunko-lab.jp/u-renja/api/iiif/items/1528-1/sequence/normal",
+            "@type": "sc:Sequence",
+            "canvases": []
+        }
+    ]
+}

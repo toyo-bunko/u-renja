@@ -1,1 +1,13 @@
-{}
+{
+    "@context": "http://iiif.io/api/presentation/2/context.json",
+    "@id": "https://static.toyobunko-lab.jp/u-renja/api/iiif/items/181-1/manifest.json",
+    "@type": "sc:Manifest",
+    "label": "大乘大悲分陀利經8卷坿音釋",
+    "sequences": [
+        {
+            "@id": "https://static.toyobunko-lab.jp/u-renja/api/iiif/items/181-1/sequence/normal",
+            "@type": "sc:Sequence",
+            "canvases": []
+        }
+    ]
+}

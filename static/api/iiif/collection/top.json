@@ -1,0 +1,14 @@
+{
+    "@context": "http://iiif.io/api/presentation/2/context.json",
+    "@id": "https://static.toyobunko-lab.jp/u-renja/api/iiif/collection/top.json",
+    "@type": "sc:Collection",
+    "attribution": "東洋文庫 / Toyo Bunko",
+    "label": "酉蓮社本",
+    "manifests": [
+        {
+            "@id": "https://static.toyobunko-lab.jp/u-renja/api/iiif/items/1-1/manifest.json",
+            "@type": "sc:Manifest",
+            "label": "大般若波羅蜜多經600卷坿音釋校譌"
+        }
+    ]
+}

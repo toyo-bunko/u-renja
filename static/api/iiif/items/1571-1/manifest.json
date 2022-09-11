@@ -1,1 +1,13 @@
-{}
+{
+    "@context": "http://iiif.io/api/presentation/2/context.json",
+    "@id": "https://static.toyobunko-lab.jp/u-renja/api/iiif/items/1571-1/manifest.json",
+    "@type": "sc:Manifest",
+    "label": "請觀音經疏闡義鈔4卷",
+    "sequences": [
+        {
+            "@id": "https://static.toyobunko-lab.jp/u-renja/api/iiif/items/1571-1/sequence/normal",
+            "@type": "sc:Sequence",
+            "canvases": []
+        }
+    ]
+}

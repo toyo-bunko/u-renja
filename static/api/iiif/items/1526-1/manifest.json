@@ -1,1 +1,13 @@
-{}
+{
+    "@context": "http://iiif.io/api/presentation/2/context.json",
+    "@id": "https://static.toyobunko-lab.jp/u-renja/api/iiif/items/1526-1/manifest.json",
+    "@type": "sc:Manifest",
+    "label": "熾盛光道場念誦儀1卷",
+    "sequences": [
+        {
+            "@id": "https://static.toyobunko-lab.jp/u-renja/api/iiif/items/1526-1/sequence/normal",
+            "@type": "sc:Sequence",
+            "canvases": []
+        }
+    ]
+}
