@@ -19,7 +19,7 @@
       </v-list>
     </v-navigation-drawer>
 
-    <v-app-bar>
+    <v-app-bar flat color="primary" dark>
       <v-app-bar-nav-icon v-if="isMobile" @click.stop="drawer = !drawer" />
 
       <v-toolbar-title>
@@ -51,8 +51,8 @@
 
       <v-menu offset-y>
         <template v-slot:activator="{ on }">
-          <v-btn depressed btn v-on="on">
-            <v-icon class="mr-2">mdi-translate</v-icon>
+          <v-btn icon depressed btn v-on="on">
+            <v-icon>mdi-translate</v-icon>
           </v-btn>
         </template>
 
@@ -111,7 +111,7 @@ export default class Header extends Vue {
     */
     {
       label: 'dataset',
-      to: this.localePath({ name: 'dataset' }),
+      to: this.localePath({ name: 'page-slug', params: { slug: 'dataset' } }),
     },
   ]
 

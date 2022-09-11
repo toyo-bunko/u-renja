@@ -1,6 +1,5 @@
 <template>
-  <div>
-    <BMenu :items="bh"></BMenu>
+  <Content :items="bh">
     <v-container class="my-5">
       <!-- background-color="primary" dark  -->
       <v-tabs class="mb-10" show-arrows>
@@ -102,19 +101,18 @@
         </v-tabs-items>
       </template>
     </v-container>
-  </div>
+  </Content>
 </template>
 
 <script>
-// import axios from 'axios'
-import BMenu from '~/components/BMenu.vue'
+import Content from '~/components/layouts/Content.vue'
 import BarChart from '~/components/BarChart'
 import CRender from '~/components/common/view/CRender.vue'
 
 export default {
   components: {
     BarChart,
-    BMenu,
+    Content,
     CRender,
   },
   data() {

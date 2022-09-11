@@ -1,6 +1,5 @@
 <template>
-  <div>
-    <BMenu :items="bh"></BMenu>
+  <Content :items="bh">
     <v-container class="my-5">
       <h2 class="mb-5">{{ title }}</h2>
 
@@ -10,16 +9,16 @@
         </li>
       </ul>
     </v-container>
-  </div>
+  </Content>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from 'nuxt-property-decorator'
-import BMenu from '~/components/BMenu.vue'
+import Content from '~/components/layouts/Content.vue'
 
 @Component({
   components: {
-    BMenu,
+    Content,
   },
 })
 export default class Page extends Vue {

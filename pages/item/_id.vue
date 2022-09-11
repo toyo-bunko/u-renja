@@ -1,33 +1,35 @@
 <template>
-  <div>
+  <Content :items="bh" class="mb-10">
     <v-container v-if="apiResult">
       <h2 class="text-center my-5">
         {{ $t('詳細情報') }}
       </h2>
       <table
         border="1"
-        style="border-collapse: collapse;"
+        style="border-collapse: collapse"
         width="100%"
         class="my-2"
       >
         <template v-for="(obj, index) in apiResult">
           <tr v-if="obj.label !== '卷末附録_facet'" :key="index">
-            <th>{{ obj.label }}</th>
+            <th width="30%">{{ obj.label }}</th>
             <td>{{ $utils.formatArrayValue(obj.value, ' ') }}</td>
           </tr>
         </template>
       </table>
     </v-container>
-  </div>
+  </Content>
 </template>
 
 <script lang="ts">
 import { Vue, Component } from 'nuxt-property-decorator'
 import ShareButtons from '~/components/common/ShareButtons.vue'
+import Content from '~/components/layouts/Content.vue'
 
 @Component({
   components: {
     ShareButtons,
+    Content,
   },
 })
 export default class Search extends Vue {
@@ -109,6 +111,29 @@ export default class Search extends Vue {
     return {
       title: this.$t('詳細情報') + ': ' + this.title,
     }
+  }
+
+  get bh(): any[] {
+    return [
+      {
+        text: this.$t('top'),
+        disabled: false,
+        to: this.localePath({ name: 'index' }),
+        exact: true,
+      },
+      {
+        text: this.$t('詳細目録'),
+        disabled: false,
+        to: this.localePath({
+          name: 'search-slug',
+          params: { slug: 'advanced' },
+        }),
+        exact: true,
+      },
+      {
+        text: this.title,
+      },
+    ]
   }
 }
 </script>

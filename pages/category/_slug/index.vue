@@ -1,6 +1,5 @@
 <template>
-  <div>
-    <BMenu :items="bh"></BMenu>
+  <Content :items="bh">
     <v-container class="my-5">
       <h2 class="mb-5">{{ $t('category') + '：' + $t(config.label) }}</h2>
 
@@ -39,15 +38,15 @@
         </template>
       </v-simple-table>
     </v-container>
-  </div>
+  </Content>
 </template>
 
 <script>
-import BMenu from '~/components/BMenu.vue'
+import Content from '~/components/layouts/Content.vue'
 
 export default {
   components: {
-    BMenu,
+    Content,
   },
   data() {
     return {

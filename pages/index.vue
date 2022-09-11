@@ -11,62 +11,73 @@
       </p>
     </v-container>
 
-    <v-container class="my-10">
+    <v-container class="mb-10">
       <div class="mb-5 pb-5 text-center">
         <img class="my-5" width="90" :src="baseUrl + '/img/「猶龍窟」印.png'" />
-        <h2>{{ $t(siteName) }}</h2>
-        <p class="py-5" v-html="siteDesc"></p>
+        <h2 class="mb-5">{{ $t(siteName) }}</h2>
+        <!-- <p class="py-5" v-html="siteDesc"></p> -->
 
-        <p>以下からお試しください。</p>
-
-        <v-btn
-          class="ma-2"
-          dark
-          color="primary"
-          :to="
-            localePath({
-              name: 'tree',
-            })
-          "
-        >
-          {{ '所在' }}
-        </v-btn>
+        <!-- <p>以下からお試しください。</p> -->
 
         <v-btn
+          v-for="(item, key) in [
+            {
+              label: '所在',
+              path: {
+                name: 'tree',
+              },
+            },
+            {
+              label: '書名目録',
+              path: {
+                name: 'search-slug',
+              },
+            },
+            {
+              label: '詳細目録',
+              path: {
+                name: 'search-slug',
+                params: { slug: 'advanced' },
+              },
+            },
+          ]"
+          :key="key"
+          rounded
+          depressed
           class="ma-2"
           dark
-          color="primary"
-          :to="
-            localePath({
-              name: 'search-slug',
-            })
-          "
+          color2="primary"
+          color="error"
+          :to="localePath(item.path)"
         >
-          {{ '書名目録' }}
-        </v-btn>
-
-        <v-btn
-          class="ma-2"
-          dark
-          color="primary"
-          :to="
-            localePath({
-              name: 'search-slug',
-              params: { slug: 'advanced' },
-            })
-          "
-        >
-          {{ '詳細目録' }}
+          {{ $t(item.label) }}
         </v-btn>
       </div>
     </v-container>
+    <v-sheet color="grey lighten-3" class="">
+      <v-container class="py-10">
+        <div>
+          <span class="text-h5 mr-2">{{ $t('news') }}</span>
+          <nuxt-link :to="localePath({ name: 'news' })">{{
+            $t('all')
+          }}</nuxt-link>
+
+          <News class="mt-4" />
+        </div>
+      </v-container>
+    </v-sheet>
   </div>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from 'nuxt-property-decorator'
+import News from '~/components/news/News.vue'
 
-@Component
+@Component({
+  components: {
+    News,
+  },
+})
 export default class Page extends Vue {
   head() {
     return {

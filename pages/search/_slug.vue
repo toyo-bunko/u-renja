@@ -1,14 +1,5 @@
 <template>
-  <div>
-    <v-sheet v-if="isBc" color="grey lighten-2">
-      <v-container fluid class="py-4">
-        <v-breadcrumbs class="py-0" :items="bh">
-          <template #divider>
-            <v-icon>mdi-chevron-right</v-icon>
-          </template>
-        </v-breadcrumbs>
-      </v-container>
-    </v-sheet>
+  <Content :items="bh">
     <v-container class="my-5">
       <h2>{{ title }}</h2>
 
@@ -70,21 +61,22 @@
               :key="key"
               class="mr-2 my-2"
               close
-              label
+              dark
               @click:close="faceted(e.label, e.value)"
             >
               {{ aggs[e.label].label }}: <c-render :value="e.value" />
             </v-chip>
           </template>
 
-          <v-chip
+          <v-btn
             v-if="filters.length > 0"
-            label
+            text
+            color="primary"
             class="mr-2 my-2"
             @click="init()"
           >
             {{ $t('clear') }}
-          </v-chip>
+          </v-btn>
         </div>
 
         <ViewSwitch class="mt-5" :aggs="aggs"></ViewSwitch>
@@ -297,7 +289,7 @@
           </v-col>
         </v-row>
 
-        <div v-show="isPagination" class="text-center mt-10">
+        <div v-show="isPagination" class="text-center mt-5 mb-10">
           <v-pagination
             v-model="page"
             :length="length"
@@ -374,7 +366,7 @@
         </v-card-actions>
       </v-card>
     </v-dialog>
-  </div>
+  </Content>
 </template>
 
 <script>
@@ -387,9 +379,11 @@ import CustomSearchLayoutAdvanced from '~/components/custom/search/layout/Advanc
 import ViewSwitch from '~/components/custom/search/ViewSwitch.vue'
 
 import CRender from '~/components/common/view/CRender.vue'
+import Content from '~/components/layouts/Content.vue'
 
 export default {
   components: {
+    Content,
     FullTextSearch,
     SearchAdvanced,
     SearchLayoutGraph,

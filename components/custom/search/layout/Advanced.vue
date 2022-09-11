@@ -24,7 +24,7 @@
           <th>卷末附録</th>
           <th>刊記</th>
           <th>圖像</th>
-          <th>詳細情報</th>
+          <th></th>
         </tr>
       </thead>
       <tbody>
@@ -57,7 +57,7 @@
                   },
                 })
               "
-              >{{ 'more' }}
+              >{{ $t('more') }}
             </nuxt-link>
           </td>
         </tr>

@@ -5,7 +5,7 @@
     v-model="q"
     light
     single-line
-    filled
+    outlined
     rounded
     dense
     hide-details
@@ -13,7 +13,6 @@
     clearable
     clear-icon="mdi-close-circle"
     append-icon="mdi-magnify"
-    :background-color="backgroundColor"
     @click:append="search"
     @keydown.enter="trigger"
   ></v-text-field>

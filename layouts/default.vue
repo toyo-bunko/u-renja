@@ -2,9 +2,9 @@
   <v-app>
     <Header />
 
-    <v-content>
+    <v-main>
       <nuxt />
-    </v-content>
+    </v-main>
 
     <Footer />
 
@@ -74,5 +74,22 @@ td {
 }
 a {
   text-decoration: none;
+}
+
+.v-pagination__navigation {
+  box-shadow: none !important;
+}
+
+.v-pagination__item {
+  box-shadow: none !important;
+}
+
+em {
+  background-color: #ffff00;
+}
+
+th {
+  background-color: lightgray;
+  /*color: white;*/
 }
 </style>

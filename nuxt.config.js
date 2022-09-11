@@ -316,6 +316,133 @@ env.advanced = []
 const norm = JSON.parse(fs.readFileSync('static/data/norm.json'))
 env.itaiji = norm
 
+env.menu = [
+  {
+    label: 'はじめに・凡例',
+    href: env.BASE_URL + '/はじめに・凡例.pdf',
+
+    type: 'about_',
+    weight: -1,
+  },
+  {
+    label: '現在の酉蓮社における収蔵状況',
+    href: env.BASE_URL + '/現在の酉蓮社における収蔵状況.pdf',
+
+    type: 'about_',
+    weight: 0,
+  },
+  /*
+  {
+    label: 'update',
+    to: {
+      name: 'page-slug',
+      params: {
+        slug: 'update',
+      },
+    },
+    icon: 'mdi-information',
+    top: true,
+    type: 'about_',
+    weight: 1,
+    // description: 'このサイトは、ＷＥＢ上で正保琉球国絵図の画像を公開するとともに、絵図に描き込まれた情報を分析するために構築されたデジタルアーカイブです。',
+  },
+  {
+    label: 'inquiry',
+    href:
+      'https://docs.google.com/forms/d/e/1FAIpQLSd1gYA3qgLN2qQKn4o5vuzbma3Dgtoj_u555SVNuIgM4CSc-g/viewform?usp=sf_link',
+
+    icon: 'mdi-information',
+    top: true,
+    type: 'about_',
+    weight: 2,
+    // description: 'このサイトは、ＷＥＢ上で正保琉球国絵図の画像を公開するとともに、絵図に描き込まれた情報を分析するために構築されたデジタルアーカイブです。',
+  },
+  */
+  {
+    label: 'news',
+    to: {
+      name: 'news',
+    },
+    icon: 'mdi-information',
+    top: true,
+    type: 'about_',
+    weight: 3,
+    // description: 'このサイトは、ＷＥＢ上で正保琉球国絵図の画像を公開するとともに、絵図に描き込まれた情報を分析するために構築されたデジタルアーカイブです。',
+  },
+  {
+    label: '所在',
+    to: {
+      name: 'tree',
+    },
+    icon: 'mdi-information',
+    top: true,
+    type: 'tools',
+    weight: -1,
+    // description: 'このサイトは、ＷＥＢ上で正保琉球国絵図の画像を公開するとともに、絵図に描き込まれた情報を分析するために構築されたデジタルアーカイブです。',
+  },
+  {
+    label: '書名目録',
+    to: {
+      name: 'search-slug',
+    },
+    icon: 'mdi-information',
+    top: true,
+    type: 'tools',
+    weight: 0,
+    // description: 'このサイトは、ＷＥＢ上で正保琉球国絵図の画像を公開するとともに、絵図に描き込まれた情報を分析するために構築されたデジタルアーカイブです。',
+  },
+  {
+    label: '詳細目録',
+    to: {
+      name: 'search-slug',
+      params: {
+        slug: 'advanced',
+      },
+    },
+    icon: 'mdi-information',
+    top: true,
+    type: 'tools',
+    weight: 1,
+    // description: 'このサイトは、ＷＥＢ上で正保琉球国絵図の画像を公開するとともに、絵図に描き込まれた情報を分析するために構築されたデジタルアーカイブです。',
+  },
+  {
+    label: 'category',
+    to: {
+      name: 'category',
+    },
+    icon: 'mdi-information',
+    top: true,
+    type: 'tools',
+    weight: 2,
+    // description: 'このサイトは、ＷＥＢ上で正保琉球国絵図の画像を公開するとともに、絵図に描き込まれた情報を分析するために構築されたデジタルアーカイブです。',
+  },
+  {
+    label: 'dataset',
+    to: {
+      name: 'dataset',
+    },
+    icon: 'mdi-information',
+    top: true,
+    type: 'tools',
+    weight: 3,
+    // description: 'このサイトは、ＷＥＢ上で正保琉球国絵図の画像を公開するとともに、絵図に描き込まれた情報を分析するために構築されたデジタルアーカイブです。',
+  },
+  {
+    label: '東洋文庫',
+    href: 'http://www.toyo-bunko.or.jp/',
+    target: '_blank',
+    type: 'links',
+    weight: 0,
+  },
+  {
+    label: '『大正新脩大蔵経』底本・校本DB',
+    href: 'https://static.toyobunko-lab.jp/taishozo/',
+    target: '_blank',
+    type: 'links',
+    weight: 1,
+  },
+]
+
 ///
 
 module.exports = {
@@ -345,7 +472,8 @@ module.exports = {
     ignoreNotFoundWarnings: true,
   },
   // mode: 'universal',
-  mode: 'spa',
+  ssr: false,
+  target: 'static',
   /*
    ** Headers of the page
    */
@@ -480,6 +608,7 @@ module.exports = {
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
     '@nuxtjs/pwa',
+    '@nuxt/content',
     // Doc: https://github.com/nuxt-community/dotenv-module
     '@nuxtjs/dotenv',
     'nuxt-i18n',
