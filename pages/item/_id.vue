@@ -56,7 +56,7 @@ export default class Search extends Vue {
 
   async asyncData(context: any) {
     const itemId = `${context.params.id}`
-    const uri = process.env.BASE_URL + '/iiif/' + itemId + '/manifest.json'
+    const uri = process.env.BASE_URL + '/data/item/' + itemId + '/manifest.json'
     const apiResult = await context.$axios
       .get(uri)
       .then((response: any) => {

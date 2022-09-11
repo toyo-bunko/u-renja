@@ -4,7 +4,7 @@ const fs = require('fs')
 require('dotenv').config()
 const {
   API_BASE_URL,
-  BASE_URL,
+  // BASE_URL,
   // CDN_URL,
   projectNameJa,
   projectNameEn,
@@ -27,6 +27,38 @@ const {
   SHORT_NAME,
   SIMILAR_IMAGES_FLAG,
 } = process.env
+
+const env = {
+  API_BASE_URL,
+  // BASE_URL,
+  // CDN_URL,
+  projectNameJa,
+  projectNameEn,
+
+  projectFooterJa,
+  projectFooterEn,
+
+  projectDescriptionJa,
+  projectDescriptionEn,
+  projectKeywords,
+  ELASTIC_SEARCH_HOST,
+  ELASTIC_SEARCH_MAIN_INDEX,
+  IIIF_VIEWER_SHOW_FLAG,
+  CURATION_VIEW_SHOW_FLAG,
+  FACETS_FLAGS,
+  FACETS_LABELS,
+  SORT_LABELS,
+  SEARCH_LABELS,
+  GOOGLE_ANALYTICS_ID,
+  SHORT_NAME,
+  SIMILAR_IMAGES_FLAG,
+}
+
+const environment = process.env.NODE_ENV || 'development'
+const envSettings = require(`./env/${environment}.js`)
+for (const key in envSettings) {
+  env[key] = envSettings[key]
+}
 
 /* nuxt.config.js */
 // `DEPLOY_ENV` が `GH_PAGES` の場合のみ `router.base = '/<repository-name>/'` を追加する
@@ -58,32 +90,6 @@ const ogpImages = basePath + 'img/ogp/' // cdnPath + 'img/ogp/'
 const shortName = process.env.SHORT_NAME
 const manifestIcon = 'img/icons/icon-512.png'
 // const splashscreens = cdnPath + 'img/splashscreens/'
-
-const env = {
-  API_BASE_URL,
-  BASE_URL,
-  // CDN_URL,
-  projectNameJa,
-  projectNameEn,
-
-  projectFooterJa,
-  projectFooterEn,
-
-  projectDescriptionJa,
-  projectDescriptionEn,
-  projectKeywords,
-  ELASTIC_SEARCH_HOST,
-  ELASTIC_SEARCH_MAIN_INDEX,
-  IIIF_VIEWER_SHOW_FLAG,
-  CURATION_VIEW_SHOW_FLAG,
-  FACETS_FLAGS,
-  FACETS_LABELS,
-  SORT_LABELS,
-  SEARCH_LABELS,
-  GOOGLE_ANALYTICS_ID,
-  SHORT_NAME,
-  SIMILAR_IMAGES_FLAG,
-}
 
 env.db = 'https://static.toyobunko-lab.jp/taishozo'
 
@@ -322,14 +328,14 @@ env.menu = [
     href: env.BASE_URL + '/はじめに・凡例.pdf',
 
     type: 'about_',
-    weight: -1,
+    weight: 0,
   },
   {
     label: '現在の酉蓮社における収蔵状況',
     href: env.BASE_URL + '/現在の酉蓮社における収蔵状況.pdf',
 
     type: 'about_',
-    weight: 0,
+    weight: 1,
   },
   /*
   {
@@ -366,7 +372,7 @@ env.menu = [
     icon: 'mdi-information',
     top: true,
     type: 'about_',
-    weight: 3,
+    weight: 2,
     // description: 'このサイトは、ＷＥＢ上で正保琉球国絵図の画像を公開するとともに、絵図に描き込まれた情報を分析するために構築されたデジタルアーカイブです。',
   },
   {
@@ -377,7 +383,7 @@ env.menu = [
     icon: 'mdi-information',
     top: true,
     type: 'tools',
-    weight: -1,
+    weight: 0,
     // description: 'このサイトは、ＷＥＢ上で正保琉球国絵図の画像を公開するとともに、絵図に描き込まれた情報を分析するために構築されたデジタルアーカイブです。',
   },
   {
@@ -388,7 +394,7 @@ env.menu = [
     icon: 'mdi-information',
     top: true,
     type: 'tools',
-    weight: 0,
+    weight: 1,
     // description: 'このサイトは、ＷＥＢ上で正保琉球国絵図の画像を公開するとともに、絵図に描き込まれた情報を分析するために構築されたデジタルアーカイブです。',
   },
   {
@@ -402,7 +408,7 @@ env.menu = [
     icon: 'mdi-information',
     top: true,
     type: 'tools',
-    weight: 1,
+    weight: 2,
     // description: 'このサイトは、ＷＥＢ上で正保琉球国絵図の画像を公開するとともに、絵図に描き込まれた情報を分析するために構築されたデジタルアーカイブです。',
   },
   {
@@ -413,18 +419,21 @@ env.menu = [
     icon: 'mdi-information',
     top: true,
     type: 'tools',
-    weight: 2,
+    weight: 3,
     // description: 'このサイトは、ＷＥＢ上で正保琉球国絵図の画像を公開するとともに、絵図に描き込まれた情報を分析するために構築されたデジタルアーカイブです。',
   },
   {
     label: 'dataset',
     to: {
-      name: 'dataset',
+      name: 'page-slug',
+      params: {
+        slug: 'dataset',
+      },
     },
     icon: 'mdi-information',
     top: true,
     type: 'tools',
-    weight: 3,
+    weight: 4,
     // description: 'このサイトは、ＷＥＢ上で正保琉球国絵図の画像を公開するとともに、絵図に描き込まれた情報を分析するために構築されたデジタルアーカイブです。',
   },
   {
@@ -448,7 +457,7 @@ env.menu = [
 module.exports = {
   server: {
     port: 8008, // デフォルト: 3000
-    host: '0.0.0.0', // デフォルト: localhost
+    // host: '0.0.0.0', // デフォルト: localhost
   },
   ...routerBase,
   env,
