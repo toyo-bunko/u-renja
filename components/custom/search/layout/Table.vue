@@ -2,24 +2,22 @@
   <div>
     <table
       border="1"
-      style="border-collapse: collapse;"
+      style="border-collapse: collapse"
       width="100%"
       class="my-2"
     >
       <thead>
         <tr>
-          <th style="cursor: pointer;" @click="flg1 = !flg1">
+          <th style="cursor: pointer" @click="flg1 = !flg1">
             <template v-if="!flg1">
               <v-tooltip bottom>
-                <template v-slot:activator="{ on }">
+                <template #activator="{ on }">
                   <span v-on="on">{{ flg1 ? '◀︎ 分類' : '▶︎' }}</span>
                 </template>
                 <span>分類を開く</span>
               </v-tooltip>
             </template>
-            <template v-else>
-              ◀︎ 分類
-            </template>
+            <template v-else> ◀︎ 分類 </template>
           </th>
           <th>函册</th>
           <th>經番</th>
@@ -29,20 +27,18 @@
           <th>版式</th>
           <th>刊記</th>
           <th>備考</th>
-          <th style="cursor: pointer;" @click="flg2 = !flg2">
+          <th style="cursor: pointer" @click="flg2 = !flg2">
             <template v-if="!flg2">
               <v-tooltip bottom>
-                <template v-slot:activator="{ on }">
+                <template #activator="{ on }">
                   <span v-on="on"> 寸法{{ flg2 ? '' : ' ▶︎' }} </span>
                 </template>
                 <span>寸法(備考)を開く</span>
               </v-tooltip>
             </template>
-            <template v-else>
-              寸法
-            </template>
+            <template v-else> 寸法 </template>
           </th>
-          <th v-if="flg2" style="cursor: pointer;" @click="flg2 = !flg2">
+          <th v-if="flg2" style="cursor: pointer" @click="flg2 = !flg2">
             ◀︎ 寸法（備考）
           </th>
           <th>大正藏採録状況</th>
@@ -59,18 +55,22 @@
 
           <td>
             {{ $utils.formatArrayValue(obj['經典名稱・卷數']) }}
-            <template v-if="obj.relatedLink && obj.relatedLink.length > 0">
-              <template v-for="(item2, key2) in obj.relatedLink">
+            <template v-if="obj.images && obj.images.length > 0">
+              <template v-for="(item2, key2) in obj.images">
                 <span v-if="item2" :key="key2" class="mx-1">
                   <v-tooltip bottom>
-                    <template v-slot:activator="{ on }">
+                    <template #activator="{ on }">
                       <span v-on="on">
                         <a
-                          :href="`http://www.kanzaki.com/works/2016/pub/image-annotator?u=${item2.id}`"
+                          :href2="`http://www.kanzaki.com/works/2016/pub/image-annotator?u=${item2.id}`"
+                          :href="`${baseUrl}/mirador?manifest=${item2.id.replace(
+                            'https://static.toyobunko-lab.jp/u-renja',
+                            baseUrl
+                          )}`"
                           target="_blank"
                         >
                           <img
-                            width="30px"
+                            width="24px"
                             src="https://pbs.twimg.com/profile_images/596366309601845248/2uaPY5NH.png"
                           />
                         </a>
@@ -100,7 +100,28 @@
           <td v-if="flg2">
             {{ $utils.formatArrayValue(obj['寸法（備考）']) }}
           </td>
-          <td v-html="status(obj)"></td>
+          <td>
+            <template v-if="obj.related">
+              <p
+                v-for="(item, key) in obj.related"
+                :key="key"
+                class="mb-0 pb-0"
+              >
+                <a
+                  :href="
+                    `https://static.toyobunko-lab.jp/taishozo/item/${item['大正藏底本・校本DBID']}`.replace(
+                      'static.toyobunko-lab.jp/taishozo',
+                      'dev-taishozo.netlify.app'
+                    )
+                  "
+                  target="_blank"
+                  >{{ item.大正藏經典番號 }}{{ item.大正藏採録種別 }}({{
+                    item.大正藏脚注テキスト標準名称
+                  }})</a
+                >
+              </p>
+            </template>
+          </td>
         </tr>
       </tbody>
     </table>
@@ -142,23 +163,6 @@ export default class FullTextSearch extends Vue {
       (obj['函册(闕)'] ? this.$utils.formatArrayValue(obj['函册(闕)']) : '')
     )
   }
-
-  /*
-  icons(obj: any) {
-    const results = []
-    if (obj.relatedLink) {
-      const manifests = obj.relatedLink
-      for (const m of manifests) {
-        const text =
-          '<a href="http://www.kanzaki.com/works/2016/pub/image-annotator?u=' +
-          m +
-          '" target="_blank"><img width="30px" src="https://pbs.twimg.com/profile_images/596366309601845248/2uaPY5NH.png"/></a>'
-        results.push(text)
-      }
-    }
-    return results // .join('  ')
-  }
-  */
 
   size(obj: any) {
     return (

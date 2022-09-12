@@ -326,8 +326,13 @@ export class Utils {
     if (arr == null) {
       return ''
     }
+
     if (arr.length === 1) {
-      return arr[0]
+      const value = arr[0]
+      if (typeof value === 'object') {
+        return value[0]
+      }
+      return value
     } else {
       const value: string = arr.join(delimiter)
       return value

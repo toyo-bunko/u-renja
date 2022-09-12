@@ -1,8 +1,6 @@
 <template>
   <Content :items="bh">
-    <v-container class="my-5">
-      <h2>{{ title }}</h2>
-
+    <v-container class="mb-5" fluid>
       <template v-if="loading">
         <div class="text-center">
           <v-progress-circular
@@ -173,7 +171,7 @@
                     <v-img
                       contain
                       max-height="150"
-                      style="height: 150px;"
+                      style="height: 150px"
                       width="100%"
                       class="grey lighten-2"
                       :src="item.thumbnail"
@@ -213,7 +211,7 @@
                           dense
                         >
                           <v-col
-                            style="cursor: pointer;"
+                            style="cursor: pointer"
                             cols="8"
                             @click="faceted(aggField, e[0])"
                           >
@@ -250,7 +248,7 @@
                     <template v-for="(e, key) in getMinusValues(aggField)">
                       <v-row
                         :key="'r_' + key"
-                        style="cursor: pointer;"
+                        style="cursor: pointer"
                         align="center"
                         justify="center"
                         dense
@@ -258,9 +256,7 @@
                       >
                         <!-- :key="'rm_' + key" -->
                         <v-col cols="12"
-                          ><v-icon color="primary">
-                            mdi-checkbox-blank
-                          </v-icon>
+                          ><v-icon color="primary"> mdi-checkbox-blank </v-icon>
 
                           <c-render :value="e.substring(1)"></c-render
                         ></v-col>
@@ -304,13 +300,13 @@
         <v-card-title class="text-h5 grey lighten-2">
           <span class="text-h5">{{ selectedAgg.label }}</span>
         </v-card-title>
-        <v-card-text style="height: 600px; overflow-y: auto;" class="py-5">
+        <v-card-text style="height: 600px; overflow-y: auto" class="py-5">
           <!-- :items-per-page="-1" -->
           <v-data-table
             v-model="selected"
             :headers="[
-              { text: this.$t('name'), value: 'label' },
-              { text: this.$t('results'), value: 'value' },
+              { text: $t('name'), value: 'label' },
+              { text: $t('results'), value: 'value' },
             ]"
             :items="selectedAggValues"
             item-key="label"
@@ -321,7 +317,7 @@
             }"
             show-select
           >
-            <template v-slot:top>
+            <template #top>
               <v-text-field
                 v-model="facetSearch"
                 background-color="grey lighten-3"
@@ -338,9 +334,9 @@
               ></v-text-field>
             </template>
 
-            <template v-slot:item.label="{ item }">
+            <template #item.label="{ item }">
               <template v-if="item.label === ''">
-                <span style="color: #4caf50;">{{ $t('none') }}</span>
+                <span style="color: #4caf50">{{ $t('none') }}</span>
               </template>
               <template v-else>
                 {{ item.label }}
@@ -431,6 +427,12 @@ export default {
       // sortList: process.env.sort,
 
       isFacetOpenList: [],
+    }
+  },
+
+  head() {
+    return {
+      title: this.$t(this.title),
     }
   },
 
@@ -914,12 +916,6 @@ export default {
 
       sessionStorage.setItem(key, JSON.stringify(map))
     },
-  },
-
-  head() {
-    return {
-      title: this.$t(this.title),
-    }
   },
 }
 </script>

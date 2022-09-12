@@ -10,10 +10,10 @@
         width="100%"
         class="my-2"
       >
-        <template v-for="(obj, index) in apiResult">
-          <tr v-if="obj.label !== '卷末附録_facet'" :key="index">
-            <th width="30%">{{ obj.label }}</th>
-            <td>{{ $utils.formatArrayValue(obj.value, ' ') }}</td>
+        <template v-for="(field, index) in fields">
+          <tr :key="index">
+            <th width="30%">{{ field }}</th>
+            <td>{{ $utils.formatArrayValue(apiResult[field], ' ') }}</td>
           </tr>
         </template>
       </table>
@@ -33,19 +33,65 @@ import Content from '~/components/layouts/Content.vue'
   },
 })
 export default class Search extends Vue {
-  kFields: string[] = [
-    '標準名称',
-    '巻',
-    '国',
-    '時代',
-    '年',
-    '刊写者',
-    '刊写形態',
-    '関与者',
-    '関与形態',
+  fields: string[] = [
+    '分類(1)',
+    '分類(2)',
+    '分類(3)',
+    '連',
+    '箱',
+    '段',
+    '冊',
+    '闕',
+    '函册次',
+    '表紙の函次(書入)',
+    '表紙等(備考)',
+    '函(種別通番)',
+    '函(通番)',
+    '經番',
+    '通番',
+    '枝番',
+    '寸法(1)',
+    '寸法(2)',
+    '計測箇所(1)',
+    '計測箇所(2)',
+    '題簽',
+    '題簽(備考)',
+    '千字文',
+    '千字文(備考)',
+    '經典名稱',
+    '經典名稱（備考）',
+    '卷次等',
+    '卷次等(根拠)',
+    '卷次等(備考2)',
+    '卷次(譯著者)',
+    '丁數',
+    '丁數(備考)',
+    '本文(備考)',
+    '本文(書入等）',
+    '匡郭の形状(異版のみ)',
+    '界線・行款(異版のみ)',
+    '版心(異版のみ)',
+    '版心(補刻記等)',
+    '版心(備考)',
+    '附點・首書・科文等',
+    '卷末附録(1)',
+    '卷末附録(2)',
+    '卷末附録(3)',
+    '卷末附録(4)',
+    '卷末附録(備考)',
+    '刊記',
+    '刊記(西暦年)',
+    '刊記(備考)',
+    '卷末墨丁',
+    '卷末墨丁(所在)',
+    '圖像',
+    '圖像(所在)',
+    '圖像(圖柄)',
+    '圖像(丁裏)',
+    '圖像(備考)',
+    '印記',
+    '印記(備考)',
   ]
-
-  hFields: string[] = ['国', '所蔵者']
 
   apiResult: any = null
 
@@ -57,6 +103,7 @@ export default class Search extends Vue {
   async asyncData(context: any) {
     const itemId = `${context.params.id}`
     const uri = process.env.BASE_URL + '/data/item/' + itemId + '/manifest.json'
+    /*
     const apiResult = await context.$axios
       .get(uri)
       .then((response: any) => {
@@ -67,44 +114,24 @@ export default class Search extends Vue {
         // eslint-disable-next-line
         console.error(error)
       })
+      */
+    const apiResult_ = await import(
+      `~/static/api/advanced/items/${itemId}/manifest.json`
+    )
+
+    const metadata = apiResult_.default.metadata
+    const item: any = {}
+
+    for (const obj of metadata) {
+      item[obj.label] = obj.value
+    }
 
     return {
       id: itemId,
-      apiResult,
+      apiResult: item,
       uri,
       title: itemId,
     }
-  }
-
-  /*
-  get satUrl(): string {
-    const data = this.data
-    return (
-      'https://21dzk.l.u-tokyo.ac.jp/SAT2018/' +
-      data['基本情報-経典番号'] +
-      '_.' +
-      ('00' + data['SAT頭出し用']['開始巻']).slice(-2) +
-      '.' +
-      ('0000' + data['SAT頭出し用']['ページ']).slice(-4) +
-      data['SAT頭出し用']['段'] +
-      ('00' + data['SAT頭出し用']['行']).slice(-2) +
-      '.html'
-    )
-  }
-  */
-
-  get twitterUrl() {
-    return (
-      'https://twitter.com/intent/tweet?url=' + this.url + '&text=' + this.title
-    )
-  }
-
-  get facebookUrl() {
-    return 'https://www.facebook.com/sharer/sharer.php?u=' + this.url
-  }
-
-  get pocketUrl() {
-    return 'http://getpocket.com/edit?url=' + this.url
   }
 
   head() {

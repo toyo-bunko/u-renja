@@ -100,7 +100,7 @@ env.bc = true
 env.config = {
   default: {
     label: '書名目録',
-    index: 'data/index.json',
+    index: 'api/default/index.json',
     to: {
       name: 'search-slug',
     },
@@ -204,7 +204,7 @@ env.config = {
   },
   advanced: {
     label: '詳細目録',
-    index: 'data/advanced.json',
+    index: 'api/advanced/index.json',
     to: {
       name: 'search-slug',
       params: { slug: 'advanced' },

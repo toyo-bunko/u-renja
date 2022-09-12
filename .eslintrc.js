@@ -17,4 +17,10 @@ module.exports = {
   rules: {
     'nuxt/no-cjs-in-config': 'off',
   },
+  'vue/valid-v-slot': [
+    'error',
+    {
+      allowModifiers: true,
+    },
+  ],
 }
