@@ -1031,6 +1031,11 @@
             "label": "大乘大悲分陀利經8卷坿音釋"
         },
         {
+            "@id": "https://static.toyobunko-lab.jp/u-renja/api/iiif/items/182-1/manifest.json",
+            "@type": "sc:Manifest",
+            "label": "善思童子經2卷坿音釋"
+        },
+        {
             "@id": "https://static.toyobunko-lab.jp/u-renja/api/iiif/items/183-1/manifest.json",
             "@type": "sc:Manifest",
             "label": "普超三昧經4卷坿音釋"
@@ -2061,9 +2066,29 @@
             "label": "入法界體性經1卷"
         },
         {
+            "@id": "https://static.toyobunko-lab.jp/u-renja/api/iiif/items/57-1/manifest.json",
+            "@type": "sc:Manifest",
+            "label": "佛遺日摩尼寶經1卷坿音釋"
+        },
+        {
+            "@id": "https://static.toyobunko-lab.jp/u-renja/api/iiif/items/58-1/manifest.json",
+            "@type": "sc:Manifest",
+            "label": "佛説摩訶衍寶嚴經1卷坿校訛音釋"
+        },
+        {
+            "@id": "https://static.toyobunko-lab.jp/u-renja/api/iiif/items/59-1/manifest.json",
+            "@type": "sc:Manifest",
+            "label": "勝鬘師子吼一乘大方便方廣經1卷坿校訛"
+        },
+        {
             "@id": "https://static.toyobunko-lab.jp/u-renja/api/iiif/items/6-1/manifest.json",
             "@type": "sc:Manifest",
             "label": "小品般若波羅蜜經10卷坿音釋"
+        },
+        {
+            "@id": "https://static.toyobunko-lab.jp/u-renja/api/iiif/items/60-1/manifest.json",
+            "@type": "sc:Manifest",
+            "label": "毘耶娑問經2卷坿音釋"
         },
         {
             "@id": "https://static.toyobunko-lab.jp/u-renja/api/iiif/items/61-1/manifest.json",
