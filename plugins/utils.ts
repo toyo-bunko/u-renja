@@ -298,13 +298,6 @@ export class Utils {
       return (
         this.formatArrayValue(metadata.title_mt) +
         " <i class='mdi mdi-google-translate'></i>"
-        /*
-        `<v-tooltip bottom>
-          <template v-slot:activator="{ on }">
-            <i class='mdi mdi-google-translate' v-on="on"></i>
-          </template>
-          <span>Google翻訳を使用したタイトルです。</span>
-        </v-tooltip>` */
       )
     } else {
       return this.formatArrayValue(metadata._title)

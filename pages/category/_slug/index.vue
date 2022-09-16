@@ -4,7 +4,7 @@
       <h2 class="mb-5">{{ $t('category') + '：' + $t(config.label) }}</h2>
 
       <v-simple-table>
-        <template v-slot:default>
+        <template #default>
           <thead>
             <tr>
               <th>{{ $t('name') }}</th>
@@ -56,6 +56,12 @@ export default {
     }
   },
 
+  head() {
+    return {
+      title: this.$t('category') + '：' + this.$t(this.config.label),
+    }
+  },
+
   computed: {
     config: {
       get() {
@@ -91,12 +97,6 @@ export default {
         ]
       },
     },
-  },
-
-  head() {
-    return {
-      title: this.$t('category') + '：' + this.$t(this.config.label),
-    }
   },
 }
 </script>

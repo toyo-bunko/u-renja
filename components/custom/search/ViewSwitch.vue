@@ -21,7 +21,7 @@
       通番の種類が
       {{ thres }} 件以下になるように、検索結果を絞り込んでください。
 
-      <template v-slot:action="{ attrs }">
+      <template #action="{ attrs }">
         <v-btn color="blue" text v-bind="attrs" @click="dialog = false">
           Close
         </v-btn>

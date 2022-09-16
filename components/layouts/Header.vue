@@ -25,7 +25,7 @@
       <v-toolbar-title>
         <nuxt-link
           :to="localePath({ name: 'index' })"
-          style="color: inherit; text-decoration: inherit;"
+          style="color: inherit; text-decoration: inherit"
         >
           酉蓮社（旧増上寺報恩蔵）蔵嘉興版大蔵経目録データベース
         </nuxt-link>
@@ -50,7 +50,7 @@
       </template>
 
       <v-menu offset-y>
-        <template v-slot:activator="{ on }">
+        <template #activator="{ on }">
           <v-btn icon depressed btn v-on="on">
             <v-icon>mdi-translate</v-icon>
           </v-btn>

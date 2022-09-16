@@ -72,7 +72,7 @@
                 :items="itemsAggs"
                 :search="searchAgg"
               >
-                <template v-slot:item.label="{ item }">
+                <template #item.label="{ item }">
                   <nuxt-link
                     :to="
                       localePath({
@@ -139,6 +139,17 @@ export default {
 
       labels: [],
       datasets: [],
+    }
+  },
+
+  head() {
+    return {
+      title:
+        this.$t('category') +
+        ': ' +
+        this.$t(this.config.label) +
+        ' - ' +
+        this.$route.params.id,
     }
   },
 
@@ -254,17 +265,6 @@ export default {
       obj['main[refinementList][' + this.$route.params.id + '][0]'] = value
       return obj
     },
-  },
-
-  head() {
-    return {
-      title:
-        this.$t('category') +
-        ': ' +
-        this.$t(this.config.label) +
-        ' - ' +
-        this.$route.params.id,
-    }
   },
 }
 </script>

@@ -1,7 +1,7 @@
 <template>
   <v-card flat>
     <v-tooltip bottom>
-      <template v-slot:activator="{ on }">
+      <template #activator="{ on }">
         <v-btn icon class="ma-2" target="_blank" :href="twitterUrl" v-on="on"
           ><v-icon>mdi-twitter</v-icon></v-btn
         >
@@ -9,7 +9,7 @@
       <span>{{ 'Twitter' }}</span>
     </v-tooltip>
     <v-tooltip bottom>
-      <template v-slot:activator="{ on }">
+      <template #activator="{ on }">
         <v-btn icon class="ma-2" target="_blank" :href="facebookUrl" v-on="on"
           ><v-icon>mdi-facebook</v-icon></v-btn
         >
@@ -18,10 +18,10 @@
     </v-tooltip>
 
     <v-tooltip bottom>
-      <template v-slot:activator="{ on }">
+      <template #activator="{ on }">
         <v-btn icon class="ma-2" target="_blank" :href="pocketUrl" v-on="on"
           ><img
-            style="font-size: 24px;"
+            style="font-size: 24px"
             :src="baseUrl + '/img/icons/pocket.svg'"
         /></v-btn>
       </template>

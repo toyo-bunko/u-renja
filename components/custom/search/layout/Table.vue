@@ -54,7 +54,29 @@
           <td>{{ $utils.formatArrayValue(obj['通番']) }}</td>
 
           <td>
-            {{ $utils.formatArrayValue(obj['經典名稱・卷數']) }}
+            <span
+              v-html="highlight($utils.formatArrayValue(obj['經典名稱・卷數']))"
+            ></span>
+            <!-- 要検討 -->
+            <template v-if="obj['画像URL'] && obj['画像URL'].length > 0">
+              <template v-for="(item2, key2) in obj['画像URL']">
+                <span v-if="item2" :key="key2" class="mx-1">
+                  <v-tooltip bottom>
+                    <template #activator="{ on }">
+                      <span v-on="on">
+                        <a :href="item2" target="_blank">
+                          <img
+                            width="24px"
+                            src="https://pbs.twimg.com/profile_images/596366309601845248/2uaPY5NH.png"
+                          />
+                        </a>
+                      </span>
+                    </template>
+                    <span><!-- {{ item2.label }}の-->画像を開く</span>
+                  </v-tooltip>
+                </span>
+              </template>
+            </template>
             <template v-if="obj.images && obj.images.length > 0">
               <template v-for="(item2, key2) in obj.images">
                 <span v-if="item2" :key="key2" class="mx-1">
@@ -82,18 +104,10 @@
               </template>
             </template>
           </td>
-          <td>
-            {{ $utils.formatArrayValue(obj['譯著者']) }}
-          </td>
-          <td>
-            {{ $utils.formatArrayValue(obj['版式']) }}
-          </td>
-          <td>
-            {{ $utils.formatArrayValue(obj['刊記']) }}
-          </td>
-          <td>
-            {{ $utils.formatArrayValue(obj['備考']) }}
-          </td>
+          <td v-html="highlight($utils.formatArrayValue(obj['譯著者']))"></td>
+          <td v-html="highlight($utils.formatArrayValue(obj['版式']))"></td>
+          <td v-html="highlight($utils.formatArrayValue(obj['刊記']))"></td>
+          <td v-html="highlight($utils.formatArrayValue(obj['備考']))"></td>
           <td>
             {{ size(obj) }}
           </td>
@@ -202,5 +216,57 @@ export default class FullTextSearch extends Vue {
     }
     return results.join('<br/>')
   }
+
+  highlight(text: string) {
+    const keyword: any = this.$route.query['main[query]']
+    if (!keyword) {
+      return text
+    }
+
+    let keywords = keyword
+    if (typeof keyword !== 'object') {
+      keywords = [keyword]
+    }
+
+    const keywordsWithItaiji = []
+
+    const synonym: any = process.env.both
+
+    for (let keyword of keywords) {
+      const words = keyword.split('')
+      for (const word of words) {
+        if (synonym[word]) {
+          keyword = keyword.split(word).join(`(${synonym[word].join('|')})`)
+        }
+      }
+      keywordsWithItaiji.push(keyword)
+    }
+
+    const uuidMap: any = {}
+
+    let result = text
+
+    for (const keyword of keywordsWithItaiji) {
+      const regexp = new RegExp(keyword, 'g')
+      result = result.replace(regexp, function (match) {
+        const uuid = getUniqueStr()
+        uuidMap[uuid] = '<em>' + match + '</em>'
+        return uuid
+      })
+    }
+
+    for (const uuid in uuidMap) {
+      result = result.replace(uuid, uuidMap[uuid])
+    }
+    return result
+  }
+}
+
+function getUniqueStr() {
+  const strong: number = 1000
+  return (
+    new Date().getTime().toString(16) +
+    Math.floor(strong * Math.random()).toString(16)
+  )
 }
 </script>

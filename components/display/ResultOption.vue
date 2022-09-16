@@ -1,6 +1,6 @@
 <template>
   <v-menu offset-y>
-    <template v-slot:activator="{ on }">
+    <template #activator="{ on }">
       <v-btn color="primary" depressed icon v-on="on">
         <v-icon>mdi-share-variant</v-icon>
       </v-btn>

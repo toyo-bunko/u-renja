@@ -322,6 +322,16 @@ env.advanced = []
 const norm = JSON.parse(fs.readFileSync('static/data/norm.json'))
 env.itaiji = norm
 
+const both = {}
+for (const key in norm) {
+  const value = norm[key]
+  both[key] = [key, value]
+  both[value] = [key, value]
+}
+env.both = both
+
+/// //////////////
+
 env.menu = [
   {
     label: 'はじめに・凡例',

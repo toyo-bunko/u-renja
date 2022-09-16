@@ -333,7 +333,6 @@
                 class="mx-4 my-5"
               ></v-text-field>
             </template>
-
             <template #item.label="{ item }">
               <template v-if="item.label === ''">
                 <span style="color: #4caf50">{{ $t('none') }}</span>
@@ -827,8 +826,12 @@ export default {
       for (const queryField in query) {
         if (queryField.includes('[' + field + ']')) {
           const value = query[queryField]
-          if (value && value.startsWith('-')) {
-            values.push(value)
+          if (value) {
+            if (value.startsWith('-')) {
+              values.push(value)
+            }
+          } else {
+            values.push('')
           }
         }
       }
