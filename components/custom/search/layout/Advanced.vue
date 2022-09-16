@@ -2,7 +2,7 @@
   <div>
     <table
       border="1"
-      style="border-collapse: collapse;"
+      style="border-collapse: collapse"
       width="100%"
       class="my-2"
     >
@@ -39,7 +39,21 @@
           <td>{{ $utils.formatArrayValue(obj['通番']) }}</td>
           <td>{{ $utils.formatArrayValue(obj['枝番']) }}</td>
           <td>{{ $utils.formatArrayValue(obj['千字文']) }}</td>
-          <td>{{ $utils.formatArrayValue(obj['經典名稱']) }}</td>
+          <td>
+            {{ $utils.formatArrayValue(obj['經典名稱']) }}
+
+            <a
+              v-for="(item, key3) in obj.images"
+              :key="key3"
+              target="_blank"
+              :href="item"
+            >
+              <img
+                width="24px"
+                src="https://pbs.twimg.com/profile_images/596366309601845248/2uaPY5NH.png"
+              />
+            </a>
+          </td>
           <td>{{ $utils.formatArrayValue(obj['卷次等']) }}</td>
           <td>{{ $utils.formatArrayValue(obj['丁數']) }}</td>
           <td>
