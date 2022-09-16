@@ -827,7 +827,7 @@ export default {
       for (const queryField in query) {
         if (queryField.includes('[' + field + ']')) {
           const value = query[queryField]
-          if (value.startsWith('-')) {
+          if (value && value.startsWith('-')) {
             values.push(value)
           }
         }

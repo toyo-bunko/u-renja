@@ -101,7 +101,7 @@
             {{ $utils.formatArrayValue(obj['寸法（備考）']) }}
           </td>
           <td>
-            <template v-if="obj.related">
+            <template v-if="obj.related && obj.related[0] != ''">
               <p
                 v-for="(item, key) in obj.related"
                 :key="key"

@@ -241,6 +241,10 @@ export class IndexUtils {
           values = [values]
         }
 
+        if (!values) {
+          continue
+        }
+
         for (const v of values) {
           let key = '+'
           let value = v
