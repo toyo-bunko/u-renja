@@ -625,12 +625,14 @@ export default {
       const sort = query.sort || this.config.defaultSort
       this.sort = sort
 
+      /*
       console.log(
         query.layout,
         sessionStorage.getItem('layout_' + this.baseUrl),
         '' + this.layout_,
         '' + this.config.defaultLayout
       )
+      */
 
       // レイアウト
       let layout = ''
