@@ -180,6 +180,10 @@
             "value": [
                 "https://dev-urenja.netlify.app/mirador/?manifest=https://dev-urenja.netlify.app/api/iiif/items/138-1/manifest.json&pos=7"
             ]
+        },
+        {
+            "label": "画像",
+            "value": "あり"
         }
     ]
 }

@@ -94,6 +94,10 @@
         {
             "label": "images",
             "value": []
+        },
+        {
+            "label": "画像",
+            "value": "なし"
         }
     ]
 }

@@ -156,6 +156,10 @@
             "value": [
                 "https://dev-urenja.netlify.app/mirador/?manifest=https://dev-urenja.netlify.app/api/iiif/items/140-1/manifest.json&pos=221"
             ]
+        },
+        {
+            "label": "画像",
+            "value": "あり"
         }
     ]
 }

@@ -126,6 +126,10 @@
             "value": [
                 "https://img.toyobunko-lab.jp/iiif/kaken/18K00073/u-renja1524-1525/image005.tif/info.json"
             ]
+        },
+        {
+            "label": "画像",
+            "value": "あり"
         }
     ]
 }
