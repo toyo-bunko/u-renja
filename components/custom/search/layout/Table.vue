@@ -57,26 +57,6 @@
             <span
               v-html="highlight($utils.formatArrayValue(obj['經典名稱・卷數']))"
             ></span>
-            <!-- 要検討 -->
-            <template v-if="obj['画像URL'] && obj['画像URL'].length > 0">
-              <template v-for="(item2, key2) in obj['画像URL']">
-                <span v-if="item2" :key="key2" class="mx-1">
-                  <v-tooltip bottom>
-                    <template #activator="{ on }">
-                      <span v-on="on">
-                        <a :href="item2" target="_blank">
-                          <img
-                            width="24px"
-                            src="https://pbs.twimg.com/profile_images/596366309601845248/2uaPY5NH.png"
-                          />
-                        </a>
-                      </span>
-                    </template>
-                    <span><!-- {{ item2.label }}の-->画像を開く</span>
-                  </v-tooltip>
-                </span>
-              </template>
-            </template>
             <template v-if="obj.images && obj.images.length > 0">
               <template v-for="(item2, key2) in obj.images">
                 <span v-if="item2" :key="key2" class="mx-1">
@@ -84,16 +64,14 @@
                     <template #activator="{ on }">
                       <span v-on="on">
                         <a
-                          :href2="`http://www.kanzaki.com/works/2016/pub/image-annotator?u=${item2.id}`"
-                          :href="`${baseUrl}/mirador?manifest=${item2.id.replace(
-                            'https://static.toyobunko-lab.jp/u-renja',
-                            baseUrl
-                          )}`"
+                          :href="`${item2.id
+                            .split('https://static.toyobunko-lab.jp/u-renja')
+                            .join(baseUrl)}`"
                           target="_blank"
                         >
                           <img
                             width="24px"
-                            src="https://pbs.twimg.com/profile_images/596366309601845248/2uaPY5NH.png"
+                            :src="baseUrl + '/img/iiif-logo.webp'"
                           />
                         </a>
                       </span>
