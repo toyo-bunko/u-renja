@@ -162,13 +162,10 @@
 
                   <v-list-item-action>
                     <v-btn
-                      v-if="images.includes(`${item.replace('-', '_')}`)"
+                      v-if="images[`${item.replace('-', '_')}`]"
                       text
                       target="_blank"
-                      :href="`${baseUrl}/mirador/?manifest=${baseUrl}/api/iiif/dirs/${item.replace(
-                        '-',
-                        '_'
-                      )}/manifest.json`"
+                      :href="images[`${item.replace('-', '_')}`]"
                     >
                       <img
                         width="24px"
