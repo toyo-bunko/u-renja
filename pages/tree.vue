@@ -159,6 +159,23 @@
                   <v-list-item-content>
                     <v-list-item-title>{{ item }}</v-list-item-title>
                   </v-list-item-content>
+
+                  <v-list-item-action>
+                    <v-btn
+                      v-if="images.includes(`${item.replace('-', '_')}`)"
+                      text
+                      target="_blank"
+                      :href="`${baseUrl}/mirador/?manifest=${baseUrl}/api/iiif/dirs/${item.replace(
+                        '-',
+                        '_'
+                      )}/manifest.json`"
+                    >
+                      <img
+                        width="24px"
+                        :src="baseUrl + '/img/iiif-logo.webp'"
+                      />
+                    </v-btn>
+                  </v-list-item-action>
                 </template>
               </v-list-item>
             </template>
@@ -211,12 +228,22 @@ export default class Page extends Vue {
   hs: string[] = []
   k: string[] = []
 
+  baseUrl: any = process.env.BASE_URL
+
   items: any = {}
+
+  images: string[] = []
 
   async mounted() {
     let index: any = await axios.get(process.env.BASE_URL + '/data/tree.json')
     index = index.data
     this.items = index
+
+    let images: any = await axios.get(
+      process.env.BASE_URL + '/data/tree_iiif.json'
+    )
+    images = images.data
+    this.images = images
 
     if (Object.prototype.hasOwnProperty.call(sessionStorage, 'search-params')) {
       const params = JSON.parse(
