@@ -845,7 +845,8 @@
                     "label": "31",
                     "width": 4943
                 }
-            ]
+            ],
+            "viewingDirection": "right-to-left"
         }
     ]
 }

@@ -7730,7 +7730,8 @@
                     "label": "286",
                     "width": 4838
                 }
-            ]
+            ],
+            "viewingDirection": "right-to-left"
         }
     ]
 }

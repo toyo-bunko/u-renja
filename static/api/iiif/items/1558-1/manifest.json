@@ -7973,7 +7973,8 @@
                     "label": "295",
                     "width": 4961
                 }
-            ]
+            ],
+            "viewingDirection": "right-to-left"
         }
     ]
 }

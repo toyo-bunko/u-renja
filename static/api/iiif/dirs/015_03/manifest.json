@@ -2843,7 +2843,8 @@
                     "label": "105",
                     "width": 10328
                 }
-            ]
+            ],
+            "viewingDirection": "right-to-left"
         }
     ]
 }

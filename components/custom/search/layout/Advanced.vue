@@ -46,7 +46,11 @@
               v-for="(item, key3) in obj.images"
               :key="key3"
               target="_blank"
-              :href="item"
+              :href="
+                item
+                  .split('https://static.toyobunko-lab.jp/u-renja')
+                  .join(baseUrl)
+              "
             >
               <img
                 width="24px"
