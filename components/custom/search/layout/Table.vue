@@ -144,7 +144,7 @@
 
           <ul>
             <li v-for="(item, key3) in images" :key="key3">
-              <a :href="item.value" target="_blank">{{ item.label }}</a>
+              <a :href="item.id" target="_blank">{{ item.label }}</a>
             </li>
           </ul>
         </div>
