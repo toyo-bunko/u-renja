@@ -63,17 +63,28 @@
                   <v-tooltip bottom>
                     <template #activator="{ on }">
                       <span v-on="on">
-                        <a
-                          :href="`${item2.id
-                            .split('https://static.toyobunko-lab.jp/u-renja')
-                            .join(baseUrl)}`"
-                          target="_blank"
-                        >
-                          <img
-                            width="24px"
-                            :src="baseUrl + '/img/iiif-logo.webp'"
-                          />
-                        </a>
+                        <template v-if="item2.id">
+                          <a
+                            :href="`${item2.id
+                              .split('https://static.toyobunko-lab.jp/u-renja')
+                              .join(baseUrl)}`"
+                            target="_blank"
+                          >
+                            <img
+                              width="24px"
+                              :src="baseUrl + '/img/iiif-logo.webp'"
+                            />
+                          </a>
+                        </template>
+                        <!-- 複数の値の場合 -->
+                        <template v-else>
+                          <a @click="clickIcon(item2)">
+                            <img
+                              width="24px"
+                              :src="baseUrl + '/img/iiif-logo.webp'"
+                            />
+                          </a>
+                        </template>
                       </span>
                     </template>
                     <span>{{ item2.label }}の画像を開く</span>
@@ -117,6 +128,37 @@
         </tr>
       </tbody>
     </table>
+
+    <v-dialog v-model="dialog" width="500">
+      <v-card>
+        <v-card-title class="text-h5 grey lighten-2">
+          {{ title }}
+        </v-card-title>
+
+        <div class="pa-4">
+          <p>
+            SAT大蔵経データベース研究会作成の「酉蓮社所蔵
+            万暦版大蔵経（嘉興蔵）」サイトに移動します。<br />
+            下記よりご覧になりたい部分をクリックしてください。
+          </p>
+
+          <ul>
+            <li v-for="(item, key3) in images" :key="key3">
+              <a :href="item.value" target="_blank">{{ item.label }}</a>
+            </li>
+          </ul>
+        </div>
+
+        <v-divider></v-divider>
+
+        <v-card-actions>
+          <v-spacer></v-spacer>
+          <v-btn color="primary" text @click="dialog = false">
+            {{ $t('close') }}
+          </v-btn>
+        </v-card-actions>
+      </v-card>
+    </v-dialog>
   </div>
 </template>
 
@@ -136,6 +178,10 @@ export default class FullTextSearch extends Vue {
 
   flg1: boolean = false
   flg2: boolean = false
+
+  dialog: boolean = false
+  images: any[] = []
+  title: string = ''
 
   bunrui(obj: any) {
     return (
@@ -241,6 +287,12 @@ export default class FullTextSearch extends Vue {
       result = result.replace(uuid, uuidMap[uuid])
     }
     return result
+  }
+
+  clickIcon(value: any) {
+    this.dialog = true
+    this.images = value.value
+    this.title = value.label
   }
 }
 
