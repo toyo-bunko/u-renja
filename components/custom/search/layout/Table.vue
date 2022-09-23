@@ -111,8 +111,14 @@
                 class="mb-0 pb-0"
               >
                 <a
-                  :href="
+                  :href2="
                     `https://static.toyobunko-lab.jp/taishozo/item/${item['大正藏底本・校本DBID']}`.replace(
+                      'static.toyobunko-lab.jp/taishozo',
+                      'dev-taishozo.netlify.app'
+                    )
+                  "
+                  :href="
+                    `https://static.toyobunko-lab.jp/taishozo/search?main%5Bquery%5D=${item['大正藏經典番號']}`.replace(
                       'static.toyobunko-lab.jp/taishozo',
                       'dev-taishozo.netlify.app'
                     )
