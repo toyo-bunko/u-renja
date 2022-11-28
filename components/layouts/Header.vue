@@ -27,26 +27,49 @@
           :to="localePath({ name: 'index' })"
           style="color: inherit; text-decoration: inherit"
         >
-          酉蓮社（旧増上寺報恩蔵）蔵嘉興版大蔵経目録データベース
+          {{ $t('酉蓮社（旧増上寺報恩蔵）蔵嘉興版大蔵経目録データベース') }}
         </nuxt-link>
       </v-toolbar-title>
 
       <v-spacer></v-spacer>
 
       <template v-if="!isMobile">
-        <v-btn
-          v-for="(item, key) in menu"
-          :key="key"
-          class="ma-1"
-          text
-          depressed
-          :to="item.to"
-          :href="item.href"
-          exact
-        >
-          <v-icon v-if="item.icon" class="mr-1">{{ item.icon }}</v-icon>
-          {{ $t(item.label) }}
-        </v-btn>
+        <template v-for="(item, key) in menu">
+          <template v-if="item.tooltip">
+            <v-tooltip :key="key" bottom>
+              <template #activator="{ on, attrs }">
+                <v-btn
+                  class="ma-1"
+                  text
+                  depressed
+                  :to="item.to"
+                  :href="item.href"
+                  exact
+                  v-bind="attrs"
+                  v-on="on"
+                >
+                  <v-icon v-if="item.icon" class="mr-1">{{ item.icon }}</v-icon>
+                  {{ $t(item.label) }}
+                </v-btn>
+              </template>
+              {{ item.tooltip }}
+            </v-tooltip>
+          </template>
+          <template v-else>
+            <v-btn
+              :key="key"
+              class="ma-1"
+              text
+              depressed
+              :to="item.to"
+              :href="item.href"
+              exact
+            >
+              <v-icon v-if="item.icon" class="mr-1">{{ item.icon }}</v-icon>
+              {{ $t(item.label) }}
+            </v-btn>
+          </template>
+        </template>
       </template>
 
       <v-menu offset-y>
@@ -86,10 +109,14 @@ export default class Header extends Vue {
     {
       label: '所在',
       to: this.localePath({ name: 'tree' }),
+      tooltip:
+        '現在の酉蓮社における収蔵場所から、酉蓮社本の絞り込みができます。',
     },
     {
       label: '書名目録',
       to: this.localePath({ name: 'search-slug' }),
+      tooltip:
+        '酉蓮社本の書名目録です。もっと詳しい情報をご覧になりたい方は、「詳細目録」をお使いください。',
     },
     {
       label: '詳細目録',
@@ -97,6 +124,8 @@ export default class Header extends Vue {
         name: 'search-slug',
         params: { slug: 'advanced' },
       }),
+      tooltip:
+        '酉蓮社本の詳細目録です。書名のリストや情報をご覧になりたい方は、「書名目録」をお使いください。',
     },
     {
       label: 'category',

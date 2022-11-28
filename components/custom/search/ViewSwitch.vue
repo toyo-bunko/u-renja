@@ -3,17 +3,24 @@
     <v-row>
       <v-col cols="12" sm="9"></v-col>
       <v-col cols="12" sm="3">
-        <v-select
-          v-model="item"
-          hide-details
-          class="mb-0"
-          outlined
-          rounded
-          :items="items"
-          dense
-          label="切り替え"
-          @change="changeValue()"
-        ></v-select>
+        <v-tooltip bottom>
+          <template #activator="{ on, attrs }">
+            <span v-bind="attrs" v-on="on">
+              <v-select
+                v-model="item"
+                hide-details
+                class="mb-0"
+                outlined
+                rounded
+                :items="items"
+                dense
+                label="切り替え"
+                @change="changeValue()"
+              ></v-select>
+            </span>
+          </template>
+          「「所在」・「書名目録」・「詳細目録」を切り替えられます。」
+        </v-tooltip>
       </v-col>
     </v-row>
 

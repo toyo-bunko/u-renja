@@ -8,22 +8,34 @@
     >
       <thead>
         <tr>
-          <th>連</th>
-          <th>箱</th>
-          <th>段</th>
-          <th>冊</th>
-          <th>闕</th>
-          <th>函册次</th>
-          <th>經番</th>
-          <th>通番</th>
-          <th>枝番</th>
-          <th>千字文</th>
-          <th>經典名稱</th>
-          <th>卷次等</th>
-          <th>丁數</th>
-          <th>卷末附録</th>
-          <th>刊記</th>
-          <th>圖像</th>
+          <th>
+            <span class="legend" @click="displayLegend('4')">連</span>
+          </th>
+          <th><span class="legend" @click="displayLegend('5')">箱</span></th>
+          <th><span class="legend" @click="displayLegend('6')">段</span></th>
+          <th><span class="legend" @click="displayLegend('7')">冊</span></th>
+          <th><span class="legend" @click="displayLegend('8')">闕</span></th>
+          <th>
+            <span class="legend" @click="displayLegend('9')">函册次</span>
+          </th>
+          <th><span class="legend" @click="displayLegend('14')">經番</span></th>
+          <th><span class="legend" @click="displayLegend('15')">通番</span></th>
+          <th><span class="legend" @click="displayLegend('16')">枝番</span></th>
+          <th>
+            <span class="legend" @click="displayLegend('23')">千字文</span>
+          </th>
+          <th>
+            <span class="legend" @click="displayLegend('26')">經典名稱</span>
+          </th>
+          <th>
+            <span class="legend" @click="displayLegend('27')">卷次等</span>
+          </th>
+          <th><span class="legend" @click="displayLegend('31')">丁數</span></th>
+          <th>
+            <span class="legend" @click="displayLegend('58')">卷末附録</span>
+          </th>
+          <th><span class="legend" @click="displayLegend('46')">刊記</span></th>
+          <th><span class="legend" @click="displayLegend('51')">圖像</span></th>
           <th></th>
         </tr>
       </thead>
@@ -81,6 +93,52 @@
         </tr>
       </tbody>
     </table>
+
+    <v-dialog v-model="dialog4legend" width="500">
+      <v-card>
+        <v-card-title class="text-h5 grey lighten-2">
+          詳細目録 凡例
+        </v-card-title>
+
+        <div class="pa-4">
+          <v-simple-table>
+            <template #default>
+              <tbody>
+                <tr>
+                  <td>項目名</td>
+                  <td>{{ legend['項目名'] }}</td>
+                </tr>
+                <tr>
+                  <td>説明</td>
+                  <td>{{ legend['説明'] }}</td>
+                </tr>
+                <tr>
+                  <td>例</td>
+                  <td>
+                    <template v-if="legend['例']">
+                      <span
+                        v-html="String(legend['例']).split('\n').join('<br />')"
+                      ></span>
+                      <!--
+                      -->
+                    </template>
+                  </td>
+                </tr>
+              </tbody>
+            </template>
+          </v-simple-table>
+        </div>
+
+        <v-divider></v-divider>
+
+        <v-card-actions>
+          <v-spacer></v-spacer>
+          <v-btn color="primary" text @click="dialog4legend = false">
+            {{ $t('close') }}
+          </v-btn>
+        </v-card-actions>
+      </v-card>
+    </v-dialog>
   </div>
 </template>
 
@@ -97,5 +155,23 @@ export default class FullTextSearch extends Vue {
   baseUrl: any = process.env.BASE_URL
   @Prop({})
   items!: any[]
+
+  legends: any = process.env.legendAdvanced
+  legend: any = {}
+
+  dialog4legend: boolean = false
+
+  displayLegend(index: string) {
+    // console.log({ index }, this.legends)
+    // console.log({ index })
+
+    this.dialog4legend = true
+    this.legend = this.legends[index]
+  }
 }
 </script>
+<style>
+.legend {
+  cursor: pointer;
+}
+</style>

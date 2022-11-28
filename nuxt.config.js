@@ -136,7 +136,7 @@ env.config = {
       },
       經番: {
         // sort: 'name:asc',
-        label: '經番',
+        label: '通番',
         value: {},
         key: '經番',
         more: false,
@@ -341,9 +341,21 @@ env.both = both
 /// //////////////
 
 env.menu = [
+  /*
   {
     label: 'はじめに・凡例',
     href: env.BASE_URL + '/はじめに・凡例.pdf',
+
+    type: 'about_',
+    weight: 0,
+  },
+  */
+  {
+    label: 'about_',
+    to: {
+      name: 'page-slug',
+      params: { slug: 'about' },
+    },
 
     type: 'about_',
     weight: 0,
@@ -469,6 +481,12 @@ env.menu = [
     weight: 1,
   },
 ]
+
+const legendIndex = JSON.parse(fs.readFileSync('assets/書名目録凡例.json'))
+env.legendIndex = legendIndex
+
+const legendAdvanced = JSON.parse(fs.readFileSync('assets/詳細目録凡例.json'))
+env.legendAdvanced = legendAdvanced
 
 ///
 
@@ -634,7 +652,7 @@ module.exports = {
     '@nuxtjs/vuetify',
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
-    '@nuxtjs/pwa',
+    // '@nuxtjs/pwa',
     '@nuxt/content',
     // Doc: https://github.com/nuxt-community/dotenv-module
     '@nuxtjs/dotenv',

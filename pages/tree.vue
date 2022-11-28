@@ -13,6 +13,13 @@
       </v-row>
 
       <div class="mb-2">
+        <a
+          href="https://static.toyobunko-lab.jp/u-renja/%E7%8F%BE%E5%9C%A8%E3%81%AE%E9%85%89%E8%93%AE%E7%A4%BE%E3%81%AB%E3%81%8A%E3%81%91%E3%82%8B%E5%8F%8E%E8%94%B5%E7%8A%B6%E6%B3%81.pdf"
+          >現在の酉蓮社における収蔵場所</a
+        >から、 酉蓮社本の絞り込みができます。
+      </div>
+
+      <div class="mb-2">
         <b>使用上の注意</b
         >：「連」と「箱」において複数の値をチェックした場合、検索条件が同じ層になるように、子階層を選択してください。
         <ul>
@@ -33,7 +40,12 @@
         <v-col cols="12" sm="4">
           <v-card outlined flat>
             <v-card-title class="text-h5 text-center grey lighten-2">
-              所在・連
+              <v-tooltip bottom>
+                <template #activator="{ on, attrs }">
+                  <span v-bind="attrs" v-on="on">所在・連</span>
+                </template>
+                酉蓮社の収蔵場所の区画（1～7）
+              </v-tooltip>
             </v-card-title>
             <div class="pa-5">
               <v-chip label class="mr-2" small>{{ $t('checked') }}</v-chip>
@@ -79,7 +91,13 @@
         <v-col cols="12" sm="4">
           <v-card outlined flat>
             <v-card-title class="text-h5 text-center grey lighten-2">
-              所在・箱
+              <v-tooltip bottom>
+                <template #activator="{ on, attrs }">
+                  <span v-bind="attrs" v-on="on">所在・箱</span>
+                </template>
+                箱の通し番号（001～111）<br />
+                1 連に 16 箱を納める（第 7 連のみ 15 箱）
+              </v-tooltip>
             </v-card-title>
             <div class="pa-5">
               <v-chip label class="mr-2" small>{{ $t('checked') }}</v-chip>
@@ -129,7 +147,13 @@
         <v-col cols="12" sm="4">
           <v-card outlined flat>
             <v-card-title class="text-h5 text-center grey lighten-2">
-              所在・函
+              <v-tooltip bottom>
+                <template #activator="{ on, attrs }">
+                  <span v-bind="attrs" v-on="on">所在・函</span>
+                </template>
+                函の通し番号（001～333）<br />
+                1 箱は 3 段に分かれ、1 段につき 1 函ずつ納める
+              </v-tooltip>
             </v-card-title>
             <div class="pa-5">
               <v-chip label class="mr-2" small>{{ $t('checked') }}</v-chip>

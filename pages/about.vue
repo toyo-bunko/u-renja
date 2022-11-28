@@ -5,7 +5,12 @@
 
       <ul class="my-5">
         <li v-for="(item, key) in menu" :key="key" class="mb-2">
-          <a :to="item.to" :href="item.href">{{ item.label }}</a>
+          <template v-if="item.to">
+            <nuxt-link :to="item.to">{{ item.label }}</nuxt-link>
+          </template>
+          <template v-else>
+            <a :href="item.href">{{ item.label }}</a>
+          </template>
         </li>
       </ul>
     </v-container>
@@ -50,8 +55,9 @@ export default class Page extends Vue {
 
   menu: any[] = [
     {
-      label: 'はじめに・凡例',
-      href: this.baseUrl + '/はじめに・凡例.pdf',
+      label: 'はじめに', // ・凡例
+      // href: this.baseUrl + '/はじめに・凡例.pdf',
+      to: this.localePath({ name: 'page-slug', params: { slug: 'about' } }),
     },
     {
       label: '現在の酉蓮社における収蔵状況',

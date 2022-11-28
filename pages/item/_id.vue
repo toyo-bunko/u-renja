@@ -12,12 +12,62 @@
       >
         <template v-for="(field, index) in fields">
           <tr :key="index">
-            <th width="30%">{{ field }}</th>
+            <th width="30%">
+              <span class="legend" @click="displayLegend(`${index + 1}`)">{{
+                field
+              }}</span>
+            </th>
             <td>{{ $utils.formatArrayValue(apiResult[field], ' ') }}</td>
           </tr>
         </template>
       </table>
     </v-container>
+
+    <v-dialog v-model="dialog4legend" width="500">
+      <v-card>
+        <v-card-title class="text-h5 grey lighten-2">
+          詳細目録 凡例
+        </v-card-title>
+
+        <div class="pa-4">
+          <v-simple-table>
+            <template #default>
+              <tbody>
+                <tr>
+                  <td>項目名</td>
+                  <td>{{ legend['項目名'] }}</td>
+                </tr>
+                <tr>
+                  <td>説明</td>
+                  <td>{{ legend['説明'] }}</td>
+                </tr>
+                <tr>
+                  <td>例</td>
+                  <td>
+                    <template v-if="legend['例']">
+                      <span
+                        v-html="String(legend['例']).split('\n').join('<br />')"
+                      ></span>
+                      <!--
+                      -->
+                    </template>
+                  </td>
+                </tr>
+              </tbody>
+            </template>
+          </v-simple-table>
+        </div>
+
+        <v-divider></v-divider>
+
+        <v-card-actions>
+          <v-spacer></v-spacer>
+          <v-btn color="primary" text @click="dialog4legend = false">
+            {{ $t('close') }}
+          </v-btn>
+        </v-card-actions>
+      </v-card>
+    </v-dialog>
   </Content>
 </template>
 
@@ -161,6 +211,19 @@ export default class Search extends Vue {
         text: this.title,
       },
     ]
+  }
+
+  legends: any = process.env.legendAdvanced
+  legend: any = {}
+
+  dialog4legend: boolean = false
+
+  displayLegend(index: string) {
+    // console.log({ index }, this.legends)
+    // console.log({ index })
+
+    this.dialog4legend = true
+    this.legend = this.legends[index]
   }
 }
 </script>

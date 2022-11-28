@@ -193,13 +193,18 @@
               >
                 <v-expansion-panel>
                   <v-expansion-panel-header class="grey lighten-2">
-                    <h3>
-                      {{ aggList.label }}
-                      <small class="ml-2"
-                        >({{ aggList.value.length.toLocaleString() }}
-                        {{ $t('results') }})</small
-                      >
-                    </h3>
+                    <v-tooltip bottom>
+                      <template #activator="{ on, attrs }">
+                        <h3 v-bind="attrs" v-on="on">
+                          {{ aggList.label }}
+                          <small class="ml-2"
+                            >({{ aggList.value.length.toLocaleString() }}
+                            {{ $t('results') }})</small
+                          >
+                        </h3>
+                      </template>
+                      {{ aggList.label }}による絞り込みができます
+                    </v-tooltip>
                   </v-expansion-panel-header>
                   <v-expansion-panel-content outlined class="py-2">
                     <template v-for="(e, key) in aggList.value">

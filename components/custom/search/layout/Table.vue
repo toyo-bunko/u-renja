@@ -8,40 +8,58 @@
     >
       <thead>
         <tr>
-          <th style="cursor: pointer" @click="flg1 = !flg1">
+          <th>
             <template v-if="!flg1">
               <v-tooltip bottom>
                 <template #activator="{ on }">
-                  <span v-on="on">{{ flg1 ? '◀︎ 分類' : '▶︎' }}</span>
+                  <span class="legend" v-on="on" @click="flg1 = !flg1">▶︎</span>
                 </template>
-                <span>分類を開く</span>
+                <span>クリックすると、「分類」を表示します</span>
               </v-tooltip>
             </template>
-            <template v-else> ◀︎ 分類 </template>
+            <template v-else>
+              <span class="legend" @click="flg1 = !flg1">◀︎</span>
+              <span class="legend" @click="displayLegend('1')">分類</span>
+            </template>
           </th>
-          <th>函册</th>
-          <th>經番</th>
-          <th>通番</th>
-          <th>經典名稱・卷數</th>
-          <th>譯著者</th>
-          <th>版式</th>
-          <th>刊記</th>
-          <th>備考</th>
-          <th style="cursor: pointer" @click="flg2 = !flg2">
+          <th><span class="legend" @click="displayLegend('2')">函册</span></th>
+          <th><span class="legend" @click="displayLegend('3')">經番</span></th>
+          <th><span class="legend" @click="displayLegend('4')">通番</span></th>
+          <th>
+            <span class="legend" @click="displayLegend('5')"
+              >經典名稱・卷數</span
+            >
+          </th>
+          <th>
+            <span class="legend" @click="displayLegend('6')">譯著者</span>
+          </th>
+          <th><span class="legend" @click="displayLegend('7')">版式</span></th>
+          <th><span class="legend" @click="displayLegend('8')">刊記</span></th>
+          <th><span class="legend" @click="displayLegend('9')">備考</span></th>
+          <th>
+            <span class="legend" @click="displayLegend('10')">寸法</span>
             <template v-if="!flg2">
               <v-tooltip bottom>
                 <template #activator="{ on }">
-                  <span v-on="on"> 寸法{{ flg2 ? '' : ' ▶︎' }} </span>
+                  <span style="cursor: pointer" v-on="on" @click="flg2 = !flg2">
+                    ▶︎
+                  </span>
                 </template>
-                <span>寸法(備考)を開く</span>
+                <span>クリックすると、「寸法(備考)」を表示します</span>
               </v-tooltip>
             </template>
-            <template v-else> 寸法 </template>
           </th>
-          <th v-if="flg2" style="cursor: pointer" @click="flg2 = !flg2">
-            ◀︎ 寸法（備考）
+          <th v-if="flg2">
+            <span style="cursor: pointer" @click="flg2 = !flg2">◀︎</span>
+            <span style="cursor: pointer" @click="displayLegend('11')"
+              >寸法（備考）</span
+            >
           </th>
-          <th>大正藏採録状況</th>
+          <th>
+            <span class="legend" @click="displayLegend('12')"
+              >大正藏採録状況</span
+            >
+          </th>
         </tr>
       </thead>
       <tbody>
@@ -165,6 +183,44 @@
         </v-card-actions>
       </v-card>
     </v-dialog>
+
+    <v-dialog v-model="dialog4legend" width="500">
+      <v-card>
+        <v-card-title class="text-h5 grey lighten-2">
+          書名目録 凡例
+        </v-card-title>
+
+        <div class="pa-4">
+          <v-simple-table>
+            <template #default>
+              <tbody>
+                <tr>
+                  <td>項目名</td>
+                  <td>{{ legend['項目名'] }}</td>
+                </tr>
+                <tr>
+                  <td>説明</td>
+                  <td>{{ legend['説明'] }}</td>
+                </tr>
+                <tr>
+                  <td>例</td>
+                  <td v-html="legend['例'].split('\n').join('<br />')"></td>
+                </tr>
+              </tbody>
+            </template>
+          </v-simple-table>
+        </div>
+
+        <v-divider></v-divider>
+
+        <v-card-actions>
+          <v-spacer></v-spacer>
+          <v-btn color="primary" text @click="dialog4legend = false">
+            {{ $t('close') }}
+          </v-btn>
+        </v-card-actions>
+      </v-card>
+    </v-dialog>
   </div>
 </template>
 
@@ -186,6 +242,9 @@ export default class FullTextSearch extends Vue {
   flg2: boolean = false
 
   dialog: boolean = false
+
+  dialog4legend: boolean = false
+
   images: any[] = []
   title: string = ''
 
@@ -300,6 +359,17 @@ export default class FullTextSearch extends Vue {
     this.images = value.value
     this.title = value.label
   }
+
+  legends: any = process.env.legendIndex
+  legend: any = {}
+
+  displayLegend(index: string) {
+    // console.log({ index }, this.legends)
+    // console.log({ index })
+
+    this.dialog4legend = true
+    this.legend = this.legends[index]
+  }
 }
 
 function getUniqueStr() {
@@ -310,3 +380,8 @@ function getUniqueStr() {
   )
 }
 </script>
+<style>
+.legend {
+  cursor: pointer;
+}
+</style>

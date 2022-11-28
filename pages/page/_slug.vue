@@ -50,17 +50,32 @@ export default class Item extends Vue {
   }
 
   get bh() {
-    return [
-      {
-        text: this.$t('top'),
-        disabled: false,
-        to: this.localePath({ name: 'index' }),
-        exact: true,
-      },
-      {
-        text: this.title,
-      },
-    ]
+    const items = []
+    items.push({
+      text: this.$t('top'),
+      disabled: false,
+      to: this.localePath({ name: 'index' }),
+      exact: true,
+    })
+
+    const page = (this as any).page
+
+    if (page && page.bh) {
+      page.bh.forEach((item: any) => {
+        items.push({
+          text: this.$t(item.label),
+          disabled: false,
+          to: this.localePath(item.to),
+          exact: true,
+        })
+      })
+    }
+
+    items.push({
+      text: this.title,
+    })
+
+    return items
   }
 }
 </script>
