@@ -25,7 +25,7 @@
             <span class="legend" @click="displayLegend('23')">千字文</span>
           </th>
           <th>
-            <span class="legend" @click="displayLegend('26')">經典名稱</span>
+            <span class="legend" @click="displayLegend('25')">經典名稱</span>
           </th>
           <th>
             <span class="legend" @click="displayLegend('27')">卷次等</span>

@@ -134,11 +134,11 @@ env.config = {
         key: '函册',
         more: false,
       },
-      經番: {
+      通番: {
         // sort: 'name:asc',
         label: '通番',
         value: {},
-        key: '經番',
+        key: '通番',
         more: false,
       },
       譯著者_facet: {

@@ -58,19 +58,19 @@ bh: [
 
 本科研のメンバーは、下記のとおりである。
 
-> 研究代表者
->
-> [會谷佳光](https://researchmap.jp/aitani-0001)（東洋文庫研究員）
->
-> 研究分担者
->
-> [相原佳之](https://researchmap.jp/aiharayoshiyuki)（東洋文庫研究員）
->
-> [中村　覚](https://researchmap.jp/nakamura.satoru)（東京大学史料編纂所助教）
->
-> [宮崎展昌](https://researchmap.jp/tensho_miyazaki)（鶴見大学仏教文化研究所准教授）
->
-> 清水信子（東洋文庫研究員）
+<p style="text-indent:2em;">研究代表者</p>
+
+<p style="text-indent:3em;"><a href="https://researchmap.jp/aitani-0001" target="_blank">會谷佳光</a>（東洋文庫研究員）</p>
+
+<p style="text-indent:2em;">研究分担者</p>
+
+<p style="text-indent:3em;"><a href="https://researchmap.jp/aiharayoshiyuki" target="_blank">相原佳之</a>（東洋文庫研究員）</p>
+
+<p style="text-indent:3em;"><a href="https://researchmap.jp/nakamura.satoru" target="_blank">中村覚</a>（東京大学史料編纂所助教）</p>
+
+<p style="text-indent:3em;"><a href="https://researchmap.jp/tensho_miyazaki" target="_blank">宮崎展昌</a>（鶴見大学仏教文化研究所准教授）</p>
+
+<p style="text-indent:3em;"><a href="https://researchmap.jp/nobucos" target="_blank">清水信子</a>（東洋文庫研究員）</p>
 
 本科研では、酉蓮社の嘉興蔵（正蔵1418冊）を8000万画素のカメラを使ってデジタル撮影してIIIF規格で公開することを計画している。2022年度のリニューアルでは、2021年度に撮影した335点33,330コマ（全42函309冊）の画像データを新たに公開した。
 
@@ -94,4 +94,4 @@ bh: [
 
 <br/>
 
-（注）SAT大蔵経データベース研究会が撮影したのは、『[放光般若波羅蜜経](https://dev-urenja.netlify.app/search?main%5Bquery%5D=U0002&main%5Bpage%5D=1)』30巻、東晋仏陀跋陀羅等訳『[大方広仏華厳経](https://dev-urenja.netlify.app/search?main%5Bquery%5D=U0084&main%5Bpage%5D=1)』60巻、唐実叉難陀訳『[大方広仏華厳経](https://dev-urenja.netlify.app/search?main%5Bquery%5D=U0084&main%5Bpage%5D=1)』80巻（巻八十末に唐般若訳『[大方広仏華厳経](https://dev-urenja.netlify.app/search?main%5Bquery%5D=U0084&main%5Bpage%5D=1)』卷四十を重複して混入する）、『大般涅槃経』40巻、『[大般涅槃経後分](https://dev-urenja.netlify.app/search/default?main%5BrefinementList%5D%5B%E9%80%9A%E7%95%AA%5D%5B0%5D=114)』2巻、『[仏説長阿含経](https://dev-urenja.netlify.app/search?main%5Bquery%5D=U0541&main%5Bpage%5D=1)』22巻、『[瑜伽師地論](https://dev-urenja.netlify.app/search?main%5Bquery%5D=U1164&main%5Bpage%5D=1)』100巻、『[一切経音義](https://dev-urenja.netlify.app/search?main%5Bquery%5D=U1598&main%5Bpage%5D=1)』26巻。
+（注）SAT大蔵経データベース研究会が撮影したのは、『[放光般若波羅蜜経](https://dev-urenja.netlify.app/search?main%5Bquery%5D=U0002&main%5Bpage%5D=1)』30巻、東晋仏陀跋陀羅等訳[『大方広仏華厳経』60巻](https://dev-urenja.netlify.app/search?main%5Bquery%5D=U0083&main%5Bpage%5D=1)、唐実叉難陀訳[『大方広仏華厳経』80巻](https://dev-urenja.netlify.app/search?main%5Bquery%5D=U0084&main%5Bpage%5D=1)（巻八十末に唐般若訳[『大方広仏華厳経』卷四十](https://dev-urenja.netlify.app/search?main%5Bquery%5D=U0085&main%5Bpage%5D=1)を重複して混入する）、『大般涅槃経』40巻、『[大般涅槃経後分](https://dev-urenja.netlify.app/search/default?main%5BrefinementList%5D%5B%E9%80%9A%E7%95%AA%5D%5B0%5D=114)』2巻、『[仏説長阿含経](https://dev-urenja.netlify.app/search?main%5Bquery%5D=U0541&main%5Bpage%5D=1)』22巻、『[瑜伽師地論](https://dev-urenja.netlify.app/search?main%5Bquery%5D=U1164&main%5Bpage%5D=1)』100巻、『[一切経音義](https://dev-urenja.netlify.app/search?main%5Bquery%5D=U1598&main%5Bpage%5D=1)』26巻。

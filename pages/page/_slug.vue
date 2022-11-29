@@ -94,4 +94,8 @@ export default class Item extends Vue {
   margin-top: 12px;
   margin-bottom: 8px;
 }
+
+.nuxt-content p {
+  text-indent: 1em;
+}
 </style>
