@@ -140,6 +140,7 @@ env.config = {
         value: {},
         key: '通番',
         more: false,
+        type: 'number',
       },
       譯著者_facet: {
         // sort: 'name:asc',
@@ -169,15 +170,6 @@ env.config = {
         key: '画像有無',
         more: false,
         open: true,
-      },
-      通番: {
-        // sort: 'name:asc',
-        label: '通番',
-        value: {},
-        key: '通番',
-        more: false,
-        hide: true,
-        type: 'number',
       },
     },
     // sort: [{ label: '適合度', value: '_score' }],
