@@ -154,7 +154,7 @@
         {
             "label": "images",
             "value": [
-                "https://dev-urenja.netlify.app/mirador/?manifest=https://dev-urenja.netlify.app/api/iiif/items/219-1/manifest.json&pos=1"
+                "https://static.toyobunko-lab.jp/u-renja/mirador/?manifest=https://static.toyobunko-lab.jp/u-renja/api/iiif/items/219-1/manifest.json&pos=1"
             ]
         },
         {

@@ -78,7 +78,7 @@ bh: [
 
 本データベースでは、SAT大蔵経テキストデータベース研究会がすでに撮影・公開した経典については重複して撮影せず、2022年度のリニューアルの際にデータベース連携を行って、本データベースでもSAT撮影の画像を表示できるようにした。
 
-本データベースでは、当初より「[書名目録](https://dev-urenja.netlify.app/search)」（経典単位の書誌データ）においてスキャニング画像を閲覧することができたが、新たに「[所在](https://dev-urenja.netlify.app/tree)」（現在の酉蓮社における収蔵場所を表す）において冊ごとの画像データを表示できるようにし、「[詳細目録](https://dev-urenja.netlify.app/search/advanced)」（巻単位の詳細データ）において巻ごとの画像データを表示できるようにした。
+本データベースでは、当初より「[書名目録](https://static.toyobunko-lab.jp/u-renja/search)」（経典単位の書誌データ）においてスキャニング画像を閲覧することができたが、新たに「[所在](https://static.toyobunko-lab.jp/u-renja/tree)」（現在の酉蓮社における収蔵場所を表す）において冊ごとの画像データを表示できるようにし、「[詳細目録](https://static.toyobunko-lab.jp/u-renja/search/advanced)」（巻単位の詳細データ）において巻ごとの画像データを表示できるようにした。
 
 今後も酉蓮社本のデジタル撮影を継続し、2024年度までに正蔵1418冊の撮影し、本データベースにて公開するとともに、より使いやすいものに改修していく予定である。
 
@@ -94,4 +94,4 @@ bh: [
 
 <br/>
 
-（注）SAT大蔵経データベース研究会が撮影したのは、『[放光般若波羅蜜経](https://dev-urenja.netlify.app/search?main%5Bquery%5D=U0002&main%5Bpage%5D=1)』30巻、東晋仏陀跋陀羅等訳[『大方広仏華厳経』60巻](https://dev-urenja.netlify.app/search?main%5Bquery%5D=U0083&main%5Bpage%5D=1)、唐実叉難陀訳[『大方広仏華厳経』80巻](https://dev-urenja.netlify.app/search?main%5Bquery%5D=U0084&main%5Bpage%5D=1)（巻八十末に唐般若訳[『大方広仏華厳経』卷四十](https://dev-urenja.netlify.app/search?main%5Bquery%5D=U0085&main%5Bpage%5D=1)を重複して混入する）、『大般涅槃経』40巻、『[大般涅槃経後分](https://dev-urenja.netlify.app/search/default?main%5BrefinementList%5D%5B%E9%80%9A%E7%95%AA%5D%5B0%5D=114)』2巻、『[仏説長阿含経](https://dev-urenja.netlify.app/search?main%5Bquery%5D=U0541&main%5Bpage%5D=1)』22巻、『[瑜伽師地論](https://dev-urenja.netlify.app/search?main%5Bquery%5D=U1164&main%5Bpage%5D=1)』100巻、『[一切経音義](https://dev-urenja.netlify.app/search?main%5Bquery%5D=U1598&main%5Bpage%5D=1)』26巻。
+（注）SAT大蔵経データベース研究会が撮影したのは、『[放光般若波羅蜜経](https://static.toyobunko-lab.jp/u-renja/search?main%5Bquery%5D=U0002&main%5Bpage%5D=1)』30巻、東晋仏陀跋陀羅等訳[『大方広仏華厳経』60巻](https://static.toyobunko-lab.jp/u-renja/search?main%5Bquery%5D=U0083&main%5Bpage%5D=1)、唐実叉難陀訳[『大方広仏華厳経』80巻](https://static.toyobunko-lab.jp/u-renja/search?main%5Bquery%5D=U0084&main%5Bpage%5D=1)（巻八十末に唐般若訳[『大方広仏華厳経』卷四十](https://static.toyobunko-lab.jp/u-renja/search?main%5Bquery%5D=U0085&main%5Bpage%5D=1)を重複して混入する）、『大般涅槃経』40巻、『[大般涅槃経後分](https://static.toyobunko-lab.jp/u-renja/search/default?main%5BrefinementList%5D%5B%E9%80%9A%E7%95%AA%5D%5B0%5D=114)』2巻、『[仏説長阿含経](https://static.toyobunko-lab.jp/u-renja/search?main%5Bquery%5D=U0541&main%5Bpage%5D=1)』22巻、『[瑜伽師地論](https://static.toyobunko-lab.jp/u-renja/search?main%5Bquery%5D=U1164&main%5Bpage%5D=1)』100巻、『[一切経音義](https://static.toyobunko-lab.jp/u-renja/search?main%5Bquery%5D=U1598&main%5Bpage%5D=1)』26巻。
