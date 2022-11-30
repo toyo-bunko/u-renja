@@ -2,7 +2,12 @@
 <head>
   <script>
     var pathName = window.location.pathname + window.location.search
-    var redirectPath = '/u-renja/redirect'; //piranesi3/
+    //console.log(window.location)
+    let slug = ""
+    if(window.location.hostname === "static.toyobunko-lab.jp"){
+      slug = "u-renja/"
+    }
+    var redirectPath = `/${slug}redirect`;
     location.href = redirectPath + '?p=' + encodeURI(pathName);
   </script>
 </head>
